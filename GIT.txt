@@ -1,0 +1,4 @@
+git config --global user.name "Сажин Петр"
+git config --global user.email "petiaralich@rambler.ru"
+
+git commit -m "first commit"
