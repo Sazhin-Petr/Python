@@ -3366,4 +3366,4 @@ from os import write
 # print(os.path.isdir(r'D:\Python\nest1\nest2\nest3'))
 
 
-
+print('Данные в локальном репозитории')
