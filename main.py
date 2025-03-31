@@ -3432,6 +3432,7 @@ from os import write
 
 import os
 
+
 # file_path = r"D:\Python\nest1\nest2\text2.txt"
 #
 # if os.path.exists(file_path):
@@ -3453,5 +3454,202 @@ import os
 #         print(f'{obj} - file - {os.path.getsize(p)} bytes')
 #     if os.path.isdir(p):
 #         print(f'{obj} - dir')
+
+
+#  ООП
+
+class Point:
+    x = 1  #  свойства
+    y = 2  #  свойства
+
+
+# p1 = Point()   #  объект(экземпляр) класса Point
+# p1.x = 100
+# # Point.x = 100
+# print(p1.x)
+# print(Point.x)
+# print(id(Point))
+# print(id(p1))
+# p1.x = 100
+# p1.y = 50
+# print(p1.x, p1.y)
+# print(p1.__dict__)
+#
+# p2 = Point()
+# print(p2.x, p2.y)
+# print(p2.__dict__)
+# print(Point.__dict__)
+
+
+# class Point:
+#     x = 1
+#     y = 2
+#
+#     def set_coord(self):
+#         print(self.__dict__)
+#
+#
+# p1 = Point()
+# p1.x = 5
+# p1.y = 10
+# p1.set_coord()
+# Point.set_coord(p1)
+#
+# p2 = Point()
+# p2.set_coord()
+
+#
+# class Point:
+#     x = 1
+#     y = 2
+#
+#     def set_coord(self, x1, y1):
+#         self.x = x1
+#         self.y = y1
+#
+#
+# p1 = Point()
+# p1.set_coord(5, 10)
+# Point.set_coord(p1, 10, 20)
+# print(p1.__dict__)
+#
+# p2 = Point()
+# p2.set_coord(2, 7)
+# print(p2.__dict__)
+
+#
+# class Human:
+#     name = 'name'
+#     birthday = '00.00.0000'
+#     phone = '00-00-00'
+#     country = 'country'
+#     city = 'city'
+#     address = 'street, house'
+#
+#     def print_info(self):
+#         print(' Персональные данные '.center(40, "*"))
+#         print(f'Имя: {self.name}\nДата рождения: {self.birthday}\n'
+#               f'Номер телефона: {self.phone}\nСтрана: {self.country}\n'
+#               f'Город: {self.city}\nДомашний адрес: {self.address}')
+#         print('=' * 40)
+#
+#     def input_info(self, first_name, birthday, phone, country, city, address):
+#         self.name = first_name
+#         self.birthday = birthday
+#         self.phone = phone
+#         self.country = country
+#         self.city = city
+#         self.address = address
+#
+#     def set_name(self, name):   #  установили новое имя
+#         self.name = name
+#
+#     def get_name(self):  #  получили имя
+#         return self.name
+#
+#
+# h1 = Human()
+# h1.print_info()
+# h1.input_info('Юля', '23.05.1986', '45-46-98', 'Россия', 'Москва',
+#               'Чистопрудный бульвар 1А')
+# h1.print_info()
+# h1.set_name('Юлия')
+# h1.print_info()
+# print(h1.get_name())
+
+
+# class Person:
+#     skill = 10
+#
+#     def __init__(self, name, surname):
+#         self.name = name
+#         self.surname = surname
+#
+#     def __del__(self):
+#         print('Удаление экземпляра\n\n')
+#
+#     def print_info(self):
+#         print('Данные сотрудника', self.name, self.surname)
+#
+#     def add_skill(self, k):
+#         self.skill += k
+#         print('Квалификация сотрудника:', self.skill, '\n')
+#
+#
+# p1 = Person('Виктор', 'Резник')
+# p1.print_info()
+# p1.add_skill(3)
+# # del p1
+# p1 = 5
+#
+# p2 = Person('Анна', 'Долгих')
+# p2.print_info()
+# p2.add_skill(2)
+
+
+# class Person:
+#     count = 0
+#
+#     def __init__(self, name, surname):
+#         self.name = name
+#         self.surname = surname
+#         Person.count += 1
+#
+#     def print_info(self):
+#         print('Данные сотрудника', self.name, self.surname)
+#
+#
+# p1 = Person('Виктор', 'Резник')
+# p1.print_info()
+#
+# p2 = Person('Анна', 'Долгих')
+# p2.print_info()
+#
+# print(p1.count)
+# print(p2.count)
+# print(Person.count)
+
+
+# class Robot:
+#     k = 0
+#
+#     def __init__(self, name):
+#         self.name = name
+#         print('Инициализация робота:', self.name)
+#         Robot.k += 1
+#
+#     def __del__(self):
+#         print(self.name, 'Выключается!')
+#         Robot.k -= 1
+#
+#         if Robot.k == 0:
+#             print(self.name, 'был последний')
+#         else:
+#             print('Работающих роботов осталось:', Robot.k)
+#
+#     def say_hi(self):
+#         print('Приветствую! меня зовут:', self.name)
+#
+#
+# droid1 = Robot('R2-D2')
+# droid1.say_hi()
+# print('Численность роботов:', Robot.k)
+#
+# droid2 = Robot('C-3PO')
+# droid2.say_hi()
+# print('Численность роботов:', Robot.k)
+#
+# droid3 = Robot('PC-3O')
+# droid3.say_hi()
+# print('Численность роботов:', Robot.k)
+#
+# print('\nЗдесь роботы могут проделать какую- работу\n')
+# print('Роботы закончили свою работу. Давайте их выключим.\n')
+#
+# del droid1, droid2, droid3
+#
+# print('Численность роботов:', Robot.k)
+
+
 
 
