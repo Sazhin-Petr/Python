@@ -52,7 +52,29 @@ git commit -m "first_commit"
 
 git status
 git add .
-git coomi -m "change file"
+git commit -m "change file"
 git push
 
 https://github.com/Helen-prog/Python522
+
+git branch  -- просмотр веток
+
+git branch test   -  создание ветки
+
+git branch -D test   -  удаление созданной ветки
+
+git branch readme
+
+git checkout readme   -  перейти на созданую ветку
+
+readme.md
+в таексте readme *т* - курсив  _т_
+**т** - жирный  __т__
+***т*** - курсив и жирный   ___т_ _ _
+
+git merge readme  -  слияние веток
+
+git clone  -  клонирование репозитория
+
+git pull  -  забираем изменения с удаленного репозитория в локальный
+
