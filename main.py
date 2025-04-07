@@ -3459,8 +3459,8 @@ import os
 #  ООП
 
 class Point:
-    x = 1  #  свойства
-    y = 2  #  свойства
+    x = 1  # свойства
+    y = 2  # свойства
 
 
 # p1 = Point()   #  объект(экземпляр) класса Point
@@ -3884,29 +3884,233 @@ class Point:
 # print(Point.get_count())
 # print(p1.get_count())
 
+#
+# def inc(x):
+#     return x + 1
+#
+#
+# def dec(x):
+#     return x - 1
+#
+#
+# print(inc(10), dec(10))
+#
+#
+# class Change:
+#     @staticmethod
+#     def inc(x):
+#         return x + 1
+#
+#     @staticmethod
+#     def dec(x):
+#         return x - 1
+#
+#
+# ch1 = Change()
+# print(Change.inc(10), Change.dec(10))
+# print(ch1.inc(10), ch1.dec(10))
 
-def inc(x):
-    return x + 1
+#
+# class Numbers:
+#     @staticmethod
+#     def max(a, b, c, d):
+#         mx = a
+#         if b > mx:
+#             mx = b
+#         if c > mx:
+#             mx = c
+#         if d > mx:
+#             mx = d
+#         return mx
+#
+#     @staticmethod
+#     def min(*args):
+#         mn = args[0]
+#         for i in args:
+#             if i < mn:
+#                 mn = i
+#         return mn
+#
+#     @staticmethod
+#     def average(*args):
+#         return sum(args) / len(args)
+#
+#     @staticmethod
+#     def factorial(n):
+#         fact = 1
+#         for i in range(1, n + 1):
+#             fact *= i
+#         return fact
+#
+#
+# print(Numbers.max(3, 5, 7, 9))
+# print(Numbers.min(3, 5, 7, 9))
+# print(Numbers.average(3, 5, 7, 9))
+# print(Numbers.factorial(5))
 
 
-def dec(x):
-    return x - 1
+# class Date:
+#     def __init__(self, day, month, year):
+#         self.day = day
+#         self.month = month
+#         self.year = year
+#
+#     @classmethod
+#     def from_string(cls, string_date):
+#         day, month, year = map(int, string_date.split('.'))
+#         date1 = cls(day, month, year)  #  date1 = Date(day, month, year)
+#         return date1
+#
+#     def string_to_db(self):
+#         return f'{self.year}-{self.month}-{self.day}'
+#
+#
+# # string_date = '23.10.2025'
+# # day, month, year = map(int, string_date.split('.'))  # 23 10 2025
+# # date = Date(day, month, year)
+# date = Date.from_string('23.10.2025')
+# print(date.string_to_db())
+#
+# date2 = Date.from_string('11.12.2024')
+# print(date2.string_to_db())
+#
+# class Account:
+#     rate_usd = 0.013
+#     rate_eur = 0.011
+#     suffix = 'RUB'
+#     suffix_usd = 'USD'
+#     suffix_eur = 'EUR'
+#
+#     def __init__(self, num, surname, percent, value):
+#         self.num = num
+#         self.surname = surname
+#         self.percent = percent
+#         self.value = value
+#         print(f'Счет № {self.num} принадлежащий {self.surname} был открыт.')
+#         print('*' * 50)
+#
+#     def __del__(self):
+#         print('*' * 50)
+#         print(f'Счет #{self.num} принадлежащий {self.surname} был закрыт')
+#
+#     @classmethod
+#     def set_eur_rate(cls, rate):
+#         cls.rate_eur = rate
+#
+#     @classmethod
+#     def set_usd_rate(cls, rate):
+#         cls.rate_usd = rate
+#
+#     @staticmethod
+#     def convert(value, rate):
+#         return value * rate
+#
+#     def conver_to_usd(self):
+#         usd_val = Account.convert(self.value, Account.rate_usd)
+#         print(f'Состояние счета: {usd_val} {Account.suffix_usd}')
+#
+#     def conver_to_eur(self):
+#         eur_val = Account.convert(self.value, Account.rate_eur)
+#         print(f'Состояние счета: {eur_val} {Account.suffix_eur}')
+#
+#     def print_balance(self):
+#         print(f'Текущий баланс {self.value} {Account.suffix}')
+#
+#     def print_info(self):
+#         print('Информация о счете:')
+#         print('-' * 20)
+#         print(f'#{self.num}')
+#         print(f'Владелец: {self.surname}')
+#         self.print_balance()
+#         print(f'Проценты: {self.percent:.0%}')
+#         print('-' * 20)
+#
+#     def edit_owner(self, surname):
+#         self.surname = surname
+#
+#     def add_percents(self):
+#         self.value += self.value * self.percent
+#         print('Проценты были успешно начисленны!')
+#         self.print_balance()
+#
+#     def withdraw_money(self, val):
+#         if val > self.value:
+#             print(f'К сожалению у вас нет {val} {Account.suffix}')
+#         else:
+#             self.value -= val
+#             print(f'{val} {Account.suffix} было успешно снято!')
+#         self.print_balance()
+#
+#     def add_money(self, val):
+#         self.value += val
+#         print(f'{val} {Account.suffix} было успешно добавлено!')
+#         self.print_balance()
+#
+#
+# acc = Account('12345', 'Долгих', 0.03, 1000)
+# acc.print_balance()
+# acc.print_info()
+# acc.conver_to_usd()
+# acc.conver_to_eur()
+# print()
+#
+# Account.set_usd_rate(2)
+# Account.set_eur_rate(3)
+# acc.conver_to_usd()
+# acc.conver_to_eur()
+# print()
+#
+# acc.edit_owner('Дюма')
+# acc.print_info()
+# print()
+#
+# acc.add_percents()
+# print()
+#
+# acc.withdraw_money(100)
+# print()
+#
+# acc.withdraw_money(3000)
+# print()
+#
+# acc.add_money(5000)
+# print()
+#
+# acc.withdraw_money(3000)
+# print()
 
+import re
 
-print(inc(10), dec(10))
+class UserData:
+    def __init__(self, fio, old, ps, weight):
+        self.verify_fio(fio)
+        self.verify_old(old)
+        self.__fio = fio
+        self.__old = old
+        self.__passport = ps
+        self.__weight = weight
 
-
-class Change:
     @staticmethod
-    def inc(x):
-        return x + 1
+    def verify_fio(fio):
+        if not isinstance(fio, str):
+            raise TypeError('ФИО должно быть строкой')
+        f = fio.split()  #  ['Волков2', 'Игорь', 'Николаевич']
+        if len(f) != 3:
+            raise TypeError('Неверный формат ФИО')
+        letter =''.join(re.findall(r'[a-zа-яё-]', fio, flags=re.IGNORECASE))  #  ВолковИгорьНиколаевич
+        for s in f:
+            # print(s.strip(letter))
+            if len(s.strip(letter)) != 0:
+                raise TypeError('В ФИО можно использовать только буквы и дефис')
 
     @staticmethod
-    def dec(x):
-        return x - 1
+    def verify_old(old):
+        if not isinstance(old, int):
+            raise TypeError('Возраст должен быть число')
+
+p1 = UserData('Волков-Сидоров Игорь Николаевич', 26, '1234 567890', 80.8)
 
 
-print(Change.inc(10), Change.dec(10))
 
 
 
