@@ -4105,8 +4105,8 @@ class UserData:
 
     @staticmethod
     def verify_old(old):
-        if not isinstance(old, int):
-            raise TypeError('Возраст должен быть число')
+        if not isinstance(old, int) or not 14 < old < 100:  # old < 14 or old > 100
+            raise TypeError("Возраст должен быть числом в диапазоне от 14 до 100 лет")
 
 p1 = UserData('Волков-Сидоров Игорь Николаевич', 26, '1234 567890', 80.8)
 
