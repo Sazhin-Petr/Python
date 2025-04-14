@@ -37,6 +37,7 @@ class Right_Triangle(Pair):
     def square(self):
         print(f'Площадь треугольника ABC {(self.a * self.b) / 2}')
 
+
 Triangle = Right_Triangle(5, 8)
 hyp = Triangle.hypotenuse()
 print(f'Прямоугольный треугольник ABC ({Triangle.get_a()}, {Triangle.get_b()}, {hyp})')
