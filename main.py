@@ -4654,7 +4654,7 @@ import os
 #         self.inner = self.Inner()
 #
 #     def show(self):
-#         print('Наружужный класс')
+#         print('Наружный класс')
 #
 #     class Inner:
 #         def __init__(self):
@@ -4856,35 +4856,40 @@ import os
 # subclass = MySubClass()
 # subclass.display('Эта строка будет печататься и записываться в файл')
 
+#
+# class Goods:
+#     def __init__(self, name, weight, price):
+#         super().__init__()
+#         print('Init Goods')
+#         self.name = name
+#         self.weight = weight
+#         self.price = price
+#
+#     def print_info(self):
+#         print(f'{self.name}, {self.weight}, {self.price}')
+#
+#
+# class MixinLog:
+#     ID = 0
+#
+#     def __init__(self):
+#         print('Init MixinLog')
+#         MixinLog.ID += 1
+#         self.id = MixinLog.ID
+#
+#     def save_sell_log(self):
+#         print(f'{self.id}: товар был продан в 15:20')
+#
+#
+# class Notebook(Goods, MixinLog):
+#     ...
+#
+#
+# n = Notebook('HP', 1.5, 35000)
+# n.print_info()
+# n.save_sell_log()
 
-class Goods:
-    def __init__(self, name, weight, price):
-        super().__init__()
-        print('Init Goods')
-        self.name = name
-        self.weight = weight
-        self.price = price
-
-    def print_info(self):
-        print(f'{self.name}, {self.weight}, {self.price}')
 
 
-class MixinLog:
-    ID = 0
-
-    def __init__(self):
-        print('Init MixinLog')
-        MixinLog.ID += 1
-        self.id = MixinLog.ID
-
-    def save_sell_log(self):
-        print(f'{self.id}: товар был продан в 15:20')
 
 
-class Notebook(Goods, MixinLog):
-    ...
-
-
-n = Notebook('HP', 1.5, 35000)
-n.print_info()
-n.save_sell_log()
