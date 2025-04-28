@@ -4,3 +4,10 @@ class Squre:
 
     def get_perimetr(self):
         return 4 * self.a
+
+if __name__ == '__main__':
+    s1 = Squre(10)
+    s2 = Squre(20)
+
+    print(s1.get_perimetr())
+    print(s2.get_perimetr())
