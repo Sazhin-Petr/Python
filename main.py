@@ -5497,7 +5497,7 @@ from zoneinfo import reset_tzpath
 # dumps() - сохраняет данные в строку
 # loads() - считывает данные из строки
 
-import pickle
+# import pickle
 
 
 # filename = 'basket.txt'
@@ -5802,4 +5802,5 @@ import pickle
 #
 # e = 's' if len(users) > 1 else ''
 # print(f'User{e} {max_users} comleted {max_complete} TODOs')
+
 
