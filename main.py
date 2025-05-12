@@ -5804,3 +5804,106 @@ from zoneinfo import reset_tzpath
 # print(f'User{e} {max_users} comleted {max_complete} TODOs')
 
 
+# CSV - (Comma Separated Values - переменые, разделенные запятыми)
+
+
+import csv
+
+# with open('data.csv') as f:
+#     file_reader = csv.reader(f, delimiter=';')
+#     count = 0
+#     for row in file_reader:
+#         if count == 0:
+#             print(f'Файл содержит столбцы: {", ".join(row)}')
+#         else:
+#             print(f'\t{row[0]} - {row[1]}. Родился в {row[2]} году.')
+#         count +=1
+#     print(f'Всего в файле {count} строки.')
+
+
+# with open('data.csv') as f:
+#     fields = ['Имя', 'Профессия', 'Год рождения']
+#     file_reader = csv.DictReader(f, delimiter=';', fieldnames=fields)
+#     count = 0
+#     for row in file_reader:
+#         if count == 0:
+#             print(f'Файл содержит столбцы: {", ".join(row)}')
+#         print(f'\t{row['Имя']} - {row['Профессия']}. Родился в {row['Год рождения']} году.')
+#         count += 1
+#     print(f'Всего в файле {count} строки.')
+
+# with open('student.csv', 'w') as f:
+#     writer = csv.writer(f, delimiter=';', lineterminator='\r')
+#     writer.writerow(['Имя', 'Класс', 'Возраст'])
+#     writer.writerow(['Женя', '9', '15'])
+#     writer.writerow(['Саша', '5', '12'])
+#     writer.writerow(['Маша', '11', '18'])
+
+# data = [['hostname', 'vendor', 'model', 'location'],
+#         ['sw1', 'Cisco', '3750', 'London, Best str'],
+#         ['sw2', 'Cisco', '3850', 'Liverpool, Better str'],
+#         ['sw3', 'Cisco', '3650', 'Liverpool, Better str'],
+#         ['sw4', 'Cisco', '3650', 'London, Best str']]
+
+# with open('sw_data.csv', 'w') as f:
+#     writer = csv.writer(f, delimiter=',', lineterminator='\r')
+#     # for row in data:
+#     #     writer.writerow(row)
+#     writer.writerows(data)
+#
+# with open('sw_data.csv', 'r') as f:
+#     print(f.read())
+
+
+# with open('stud.csv', 'w') as f:
+#     names = ['Имя', 'Возраст']
+#     file_writer = csv.DictWriter(f, delimiter=';', lineterminator='\r', fieldnames=names)
+#     file_writer.writeheader()
+#     file_writer.writerow({'Имя': 'Саша', 'Возраст': 6})
+#     file_writer.writerow({'Имя': 'Маша', 'Возраст': 15})
+#     file_writer.writerow({'Имя': 'Вова', 'Возраст': 14})
+
+#
+# data = [{
+#     'hostname': 'sw1',
+#     'location': 'London',
+#     'model': '3750',
+#     'vendor': 'Cisco'
+# }, {
+#     'hostname': 'sw2',
+#     'location': 'Liverpool',
+#     'model': '3850',
+#     'vendor': 'Cisco'
+# }, {
+#     'hostname': 'sw3',
+#     'location': 'Liverpool',
+#     'model': '3650',
+#     'vendor': 'Cisco'
+# }, {
+#     'hostname': 'sw4',
+#     'location': 'London',
+#     'model': '3650',
+#     'vendor': 'Cisco'
+# }]
+#
+# with open('dict_writer.csv', 'w') as f:
+#     writer = csv.DictWriter(f, delimiter=';', lineterminator='\r', fieldnames=data[0].keys())
+#     writer.writeheader()
+#     for d in data:
+#         writer.writerow(d)
+#
+# # print(data[0].keys())
+
+
+# Домашняя задача считать с json и записать в csv  https://jsonplaceholder.typicode.com/todos
+
+
+
+
+
+
+
+
+
+
+

@@ -22,6 +22,7 @@ class World:
 
     @staticmethod
     def remove_country(del_country):
+
         with open('dict_world.json', 'r', encoding='utf-8') as f:
             base = json.load(f)
 
@@ -98,3 +99,10 @@ while True:
     elif pos == 6:
         print('Работа завершена')
         break
+
+    else:
+        print('Введен некорректный номер')
+
+
+# Нужно было до цикла создать файл и в каждой цифре вызывать только лишь фунцию и в нее вкладывать файл
+# World.change_city(file)
