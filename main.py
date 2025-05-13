@@ -5807,7 +5807,7 @@ from zoneinfo import reset_tzpath
 # CSV - (Comma Separated Values - переменые, разделенные запятыми)
 
 
-import csv
+# import csv
 
 # with open('data.csv') as f:
 #     file_reader = csv.reader(f, delimiter=';')
@@ -5896,7 +5896,6 @@ import csv
 
 
 # Домашняя задача считать с json и записать в csv  https://jsonplaceholder.typicode.com/todos
-
 
 
 
