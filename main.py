@@ -5895,7 +5895,6 @@ from zoneinfo import reset_tzpath
 # # print(data[0].keys())
 
 
-# Домашняя задача считать с json и записать в csv  https://jsonplaceholder.typicode.com/todos
 
 
 
