@@ -5895,7 +5895,7 @@ from zoneinfo import reset_tzpath
 # # print(data[0].keys())
 
 
-import sqlite3
+# import sqlite3
 
 # con = sqlite3.connect('profile.db')
 # cur = con.cursor()
@@ -5915,6 +5915,59 @@ import sqlite3
 #     cur.execute('DROP TABLE users')
 #
 #
+import sqlite3
+#
+# with sqlite3.connect('users.db') as con:
+#     cur = con.cursor()
+    # cur.execute('''
+    # CREATE TABLE IF NOT EXISTS person(
+    # id INTEGER PRIMARY KEY AUTOINCREMENT,
+    # name TEXT NOT NULL,
+    # phone BLOB  NOT NULL DEFAULT "+79090000000",
+    # age INTEGER CHECK(age > 0 AND age < 100),
+    # email TEXT UNIQUE
+    # )
+    # ''')
+    # cur.execute('''
+    # ALTER TABLE person
+    # RENAME TO person_table;         #  переименование таблицы
+    # ''')
+    # cur.execute('''
+    # ALTER TABLE person_table
+    # ADD COLUMN address TEXT    #  ДОБАВИЛИ СТОЛБЕЦ
+    # ''')
+    # cur.execute('''
+    # ALTER TABLE person_table
+    # RENAME COLUMN address TO home_address     #  переименование столбца
+    # ''')
+    # cur.execute('''
+    # ALTER TABLE person_table
+    # DROP COLUMN home_address
+    # ''')
+    # cur.execute('''
+    #     DROP TABLE person_table
+    #     ''')
+
+
+with sqlite3.connect('db_3.db') as con:
+    cur = con.cursor()
+    cur.execute('''
+    SELECT *
+    FROM T1
+    LIMIT 2, 5
+    ''')
+
+    # for res in cur:
+    #     print(res)
+
+    # res = cur.fetchall()
+    # print(res)
+
+    res2 = cur.fetchmany(12)
+    print(res2)
+
+    res1 = cur.fetchone()
+    print(res1)
 
 
 
