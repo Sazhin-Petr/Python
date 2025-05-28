@@ -5915,7 +5915,7 @@ from zoneinfo import reset_tzpath
 #     cur.execute('DROP TABLE users')
 #
 #
-import sqlite3
+# import sqlite3
 #
 # with sqlite3.connect('users.db') as con:
 #     cur = con.cursor()
@@ -5969,14 +5969,55 @@ import sqlite3
 #     res1 = cur.fetchone()
 #     print(res1)
 
-num = int(input())
-max_num = 0
-second_num = 0
-while num != 0:
-    if num > max_num:
-        second_num = max_num
-        max_num = num
-    elif num > second_num:
-        second_num = num
-    num = int(input)
-print(second_num)
+import sqlite3
+
+list_cars = [
+    ('BMW', 54000),
+    ('Chevrolet', 46000),
+    ('Daewoo', 38000),
+    ('Citroen', 29000),
+    ('Honda', 33000)
+
+]
+
+with sqlite3.connect('cars.db') as con:
+    cur = con.cursor()
+    cur.execute("""
+    CREATE TABLE IF NOT EXISTS cars(
+        car_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        model TEXT,
+        price INTEGER)
+    """)
+
+    # for car in list_cars:
+    #     cur.execute("INSERT INTO cars VALUES(NULL, ?, ?)", car)
+
+    # cur.executemany("INSERT INTO cars VALUES(NULL, ?, ?)", list_cars)
+
+    cur.executescript('''
+    DELETE FROM cars WHERE model LIKE 'B%';
+    UPDATE cars SET price = price + 100;
+    ''')
+
+    # cur.execute('INSERT INTO cars VALUES(1, "Renault", 22000)')
+    # cur.execute('INSERT INTO cars VALUES(2, "Volvo", 29000)')
+    # cur.execute('INSERT INTO cars VALUES(3, "Mercedes", 57000)')
+    # cur.execute('INSERT INTO cars VALUES(4, "Bentley", 35000)')
+    # cur.execute('INSERT INTO cars VALUES(5, "AUDI", 52000)')
+
+#
+# con.commit()
+# con.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
