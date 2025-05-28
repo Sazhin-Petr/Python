@@ -5944,32 +5944,39 @@ import sqlite3
     # ALTER TABLE person_table
     # DROP COLUMN home_address
     # ''')
-    # cur.execute('''
-    #     DROP TABLE person_table
-    #     ''')
+#     # cur.execute('''
+#     #     DROP TABLE person_table
+#     #     ''')
+#
+#
+# with sqlite3.connect('db_3.db') as con:
+#     cur = con.cursor()
+#     cur.execute('''
+#     SELECT *
+#     FROM T1
+#     LIMIT 2, 5
+#     ''')
+#
+#     # for res in cur:
+#     #     print(res)
+#
+#     # res = cur.fetchall()
+#     # print(res)
+#
+#     res2 = cur.fetchmany(12)
+#     print(res2)
+#
+#     res1 = cur.fetchone()
+#     print(res1)
 
-
-with sqlite3.connect('db_3.db') as con:
-    cur = con.cursor()
-    cur.execute('''
-    SELECT *
-    FROM T1
-    LIMIT 2, 5
-    ''')
-
-    # for res in cur:
-    #     print(res)
-
-    # res = cur.fetchall()
-    # print(res)
-
-    res2 = cur.fetchmany(12)
-    print(res2)
-
-    res1 = cur.fetchone()
-    print(res1)
-
-
-
-
-
+num = int(input())
+max_num = 0
+second_num = 0
+while num != 0:
+    if num > max_num:
+        second_num = max_num
+        max_num = num
+    elif num > second_num:
+        second_num = num
+    num = int(input)
+print(second_num)

@@ -1,0 +1,78 @@
+1.	Выведите перечень сумм заказов продавца Rifkin.
+SELECT o.amt
+FROM Orders o, Salespeople sp
+WHERE o.snum = sp.snum AND sp.sname='Rifkin'
+
+SELECT amt
+FROM Orders
+WHERE snum = (SELECT snum From Salespeople WHERE sname='Rifkin'); - однострочный подзапрос сначала выполняется запрос в скобках
+
+2.	Определите  комиссионные всех продавцов, обслуживающих заказчиков в Риме
+
+SELECT sp.com
+FROM Customers c, Salespeople sp
+WHERE c.snum = sp.snum AND c.city='Rome';
+
+SELECT com
+FROM Salespeople
+WHERE snum IN (SELECT snum FROM CUstomers WHERE city='Rome')  -  многострочный запрос
+
+3.	Напишите запрос, который определит заказчиков имеющих рейтинг ниже среднего.
+
+SELECT cname, rating
+FROM Customers
+WHERE rating < (SELECT AVG(rating) FROM Customers) 
+
+
+4.	Определите города проживания заказчиков с наименьшим рейтингом.
+
+SELECT city, MIN(rating)
+FROM Customers
+GROUP BY city
+HAVING MIN(rating) IN (SELECT MIN(rating) FROM Customers)
+
+
+
+ДЗ от 26.05
+
+5.	Напишите запрос, который выводил бы заказы клиента Liu
+
+SELECT o.onum
+FROM Customers c, Orders o
+WHERE c.cnum=o.cnum AND c.cname IS 'Liu';
+
+SELECT onum
+FROM Orders
+WHERE cnum = (SELECT cnum FROM Customers WHERE cname IS 'Liu')
+
+6.	Определите наибольшие комиссионные продавца для Рима.
+
+SELECT ROUND(MAX(s.com), 2), c.city
+FROM Customers c, Salespeople s
+WHERE c.snum=s.snum AND c.city IS 'Rome';
+
+SELECT ROUND(MAX(com), 2)
+FROM Salespeople
+WHERE snum IN (SELECT snum FROM Customers WHERE city IS 'Rome')
+
+7.	Напишите запрос который выведет всех клиентов обслуживаемых продавцом Motiка.
+
+SELECT c.cname
+FROM Customers c, Salespeople s
+WHERE c.snum=s.snum AND s.sname IS 'Motika';
+
+SELECT cname
+FROM Customers
+WHERE snum IN (SELECT snum FROM Salespeople WHERE sname IS 'Motika')
+
+8.	Напишите запрос, который выведет максимальный рейтинг заказчика для продавцов имеющих комиссионные больше 0,11%.
+
+SELECT MAX(c.rating)
+FROM Customers c, Salespeople s
+WHERE c.snum=s.snum AND s.com > 0.11;
+
+SELECT MAX(rating)
+FROM Customers
+WHERE snum IN (SELECT snum FROM Salespeople WHERE com > 0.11)
+
+
