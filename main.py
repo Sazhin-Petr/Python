@@ -5967,37 +5967,37 @@ from zoneinfo import reset_tzpath
 #     print(res2)
 #
 #     res1 = cur.fetchone()
-#     print(res1)
-
-import sqlite3
-
-list_cars = [
-    ('BMW', 54000),
-    ('Chevrolet', 46000),
-    ('Daewoo', 38000),
-    ('Citroen', 29000),
-    ('Honda', 33000)
-
-]
-
-with sqlite3.connect('cars.db') as con:
-    cur = con.cursor()
-    cur.execute("""
-    CREATE TABLE IF NOT EXISTS cars(
-        car_id INTEGER PRIMARY KEY AUTOINCREMENT,
-        model TEXT,
-        price INTEGER)
-    """)
-
-    # for car in list_cars:
-    #     cur.execute("INSERT INTO cars VALUES(NULL, ?, ?)", car)
-
-    # cur.executemany("INSERT INTO cars VALUES(NULL, ?, ?)", list_cars)
-
-    cur.executescript('''
-    DELETE FROM cars WHERE model LIKE 'B%';
-    UPDATE cars SET price = price + 100;
-    ''')
+# #     print(res1)
+#
+# import sqlite3
+#
+# list_cars = [
+#     ('BMW', 54000),
+#     ('Chevrolet', 46000),
+#     ('Daewoo', 38000),
+#     ('Citroen', 29000),
+#     ('Honda', 33000)
+#
+# ]
+#
+# with sqlite3.connect('cars.db') as con:
+#     cur = con.cursor()
+#     cur.execute("""
+#     CREATE TABLE IF NOT EXISTS cars(
+#         car_id INTEGER PRIMARY KEY AUTOINCREMENT,
+#         model TEXT,
+#         price INTEGER)
+#     """)
+#
+#     # for car in list_cars:
+#     #     cur.execute("INSERT INTO cars VALUES(NULL, ?, ?)", car)
+#
+#     # cur.executemany("INSERT INTO cars VALUES(NULL, ?, ?)", list_cars)
+#
+#     cur.executescript('''
+#     DELETE FROM cars WHERE model LIKE 'B%';
+#     UPDATE cars SET price = price + 100;
+#     ''')
 
     # cur.execute('INSERT INTO cars VALUES(1, "Renault", 22000)')
     # cur.execute('INSERT INTO cars VALUES(2, "Volvo", 29000)')
@@ -6008,16 +6008,10 @@ with sqlite3.connect('cars.db') as con:
 #
 # con.commit()
 # con.close()
-
-
-
-
-
-
-
-
-
-
-
-
-
+lst = list(map(int, input().split()))
+count = 0
+for i in lst:
+    for j in range(len(lst)):
+        if i == lst[j]:
+            count += 1
+print(count)
