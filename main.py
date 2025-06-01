@@ -6008,10 +6008,3 @@ from zoneinfo import reset_tzpath
 #
 # con.commit()
 # con.close()
-lst = list(map(int, input().split()))
-count = 0
-for i in lst:
-    for j in range(len(lst)):
-        if i == lst[j]:
-            count += 1
-print(count)
