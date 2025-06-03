@@ -5919,31 +5919,31 @@ from zoneinfo import reset_tzpath
 #
 # with sqlite3.connect('users.db') as con:
 #     cur = con.cursor()
-    # cur.execute('''
-    # CREATE TABLE IF NOT EXISTS person(
-    # id INTEGER PRIMARY KEY AUTOINCREMENT,
-    # name TEXT NOT NULL,
-    # phone BLOB  NOT NULL DEFAULT "+79090000000",
-    # age INTEGER CHECK(age > 0 AND age < 100),
-    # email TEXT UNIQUE
-    # )
-    # ''')
-    # cur.execute('''
-    # ALTER TABLE person
-    # RENAME TO person_table;         #  переименование таблицы
-    # ''')
-    # cur.execute('''
-    # ALTER TABLE person_table
-    # ADD COLUMN address TEXT    #  ДОБАВИЛИ СТОЛБЕЦ
-    # ''')
-    # cur.execute('''
-    # ALTER TABLE person_table
-    # RENAME COLUMN address TO home_address     #  переименование столбца
-    # ''')
-    # cur.execute('''
-    # ALTER TABLE person_table
-    # DROP COLUMN home_address
-    # ''')
+# cur.execute('''
+# CREATE TABLE IF NOT EXISTS person(
+# id INTEGER PRIMARY KEY AUTOINCREMENT,
+# name TEXT NOT NULL,
+# phone BLOB  NOT NULL DEFAULT "+79090000000",
+# age INTEGER CHECK(age > 0 AND age < 100),
+# email TEXT UNIQUE
+# )
+# ''')
+# cur.execute('''
+# ALTER TABLE person
+# RENAME TO person_table;         #  переименование таблицы
+# ''')
+# cur.execute('''
+# ALTER TABLE person_table
+# ADD COLUMN address TEXT    #  ДОБАВИЛИ СТОЛБЕЦ
+# ''')
+# cur.execute('''
+# ALTER TABLE person_table
+# RENAME COLUMN address TO home_address     #  переименование столбца
+# ''')
+# cur.execute('''
+# ALTER TABLE person_table
+# DROP COLUMN home_address
+# ''')
 #     # cur.execute('''
 #     #     DROP TABLE person_table
 #     #     ''')
@@ -5999,12 +5999,15 @@ from zoneinfo import reset_tzpath
 #     UPDATE cars SET price = price + 100;
 #     ''')
 
-    # cur.execute('INSERT INTO cars VALUES(1, "Renault", 22000)')
-    # cur.execute('INSERT INTO cars VALUES(2, "Volvo", 29000)')
-    # cur.execute('INSERT INTO cars VALUES(3, "Mercedes", 57000)')
-    # cur.execute('INSERT INTO cars VALUES(4, "Bentley", 35000)')
-    # cur.execute('INSERT INTO cars VALUES(5, "AUDI", 52000)')
+# cur.execute('INSERT INTO cars VALUES(1, "Renault", 22000)')
+# cur.execute('INSERT INTO cars VALUES(2, "Volvo", 29000)')
+# cur.execute('INSERT INTO cars VALUES(3, "Mercedes", 57000)')
+# cur.execute('INSERT INTO cars VALUES(4, "Bentley", 35000)')
+# cur.execute('INSERT INTO cars VALUES(5, "AUDI", 52000)')
 
 #
 # con.commit()
 # con.close()
+
+
+
