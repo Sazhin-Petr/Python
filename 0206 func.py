@@ -66,8 +66,4 @@
 #     print('Ничья')
 # else:
 #     print('Win', sign)
-
-
-def get(a,b):
-    pass
-print(get(4,2))
+from idlelib.replace import replace
