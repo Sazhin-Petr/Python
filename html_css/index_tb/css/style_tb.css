@@ -1,0 +1,23 @@
+body {
+    background-image: url(../img/pattern.png);
+}
+table {
+    background: white;
+    width: 2000px;
+	height: 400px;
+	text-align: center;
+    margin: 300px auto;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+
+th {
+    background-image: url(../img/tablebg.jpg);
+    border: 2px solid grey
+}
+td {
+    border: 2px double grey
+}
+.row {
+    background: grey;
+}
