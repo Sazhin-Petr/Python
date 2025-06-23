@@ -9,6 +9,7 @@ table {
     margin: 300px auto;
     border-collapse: collapse;
     font-size: 20px;
+    border: 2px solid grey
 }
 
 th {
@@ -16,7 +17,7 @@ th {
     border: 2px solid grey
 }
 td {
-    border: 2px double grey
+    border: 2px solid grey
 }
 .row {
     background: grey;
