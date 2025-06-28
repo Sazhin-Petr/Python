@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+
+.wrap {
+    max-width: 1050px;
+    min-width: 414px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* top */
+.top {
+    background: #F3F3F3;
+    padding-bottom: 120px;
+}
+
+.top__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top__block--left {
+    margin: 0;
+    color: rgb(37, 43, 66);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    margin: 36px 0;
+}
+
+.top__block--right {
+    margin: 0;
+    display: flex;
+    list-style: none;
+}
+
+.top__block--right li {
+    margin-left: 21px;
+}
+
+.top__block--right a {
+    color: rgb(115, 115, 115);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+}
+.top__firsthead {
+    color: rgb(37, 43, 66);
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+.top__secondhead {
+    color: rgb(115, 115, 115);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    text-align: center;}
+
+.top__button {
+   margin-top: 40px;
+   text-align: center;
+}
+
+.top__buttons--first {
+    background: rgb(255, 166, 43);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    border-radius: 37px;
+    padding: 10px 36px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+.top__buttons--second {
+    box-sizing: border-box;
+    padding: 10px 36px 10px 36px;
+    border: 1px solid rgb(0, 160, 193);
+    border-radius: 37px;
+    color: rgb(0, 160, 193);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    margin-left: 5px;
+    text-decoration: none;
+}
