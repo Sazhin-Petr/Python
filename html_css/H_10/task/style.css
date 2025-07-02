@@ -20,6 +20,7 @@ body {
 
 .top__block {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -202,6 +203,7 @@ body {
     width: 327px;
     height: 244px;
     background: rgb(255, 255, 255);
+    margin-bottom: 20px;
 }
 
 .stars {
@@ -486,4 +488,52 @@ button {
 
 .end__block--right li {
     margin-left: 20px;
+}
+
+
+@media(max-width: 1050px){
+    .wrap{
+        padding: 0 40px;
+        box-sizing: border-box;
+    }
+    .choose__block, .team__block, .client__block{
+        justify-content: space-around;
+    }
+}
+
+@media(max-width: 760px){
+    .choose__element, .client__element, .team__element{
+        flex-basis: 100%;
+    }
+    .top h1{
+        font-size: 54px;
+    }
+    br{
+        display: none;
+    }
+}
+
+@media(max-width: 716px){
+    input, select{
+        flex-basis: 100%;
+        margin-right: 0;
+    }
+
+    textarea{
+        margin-right: 0;
+    }
+    button{
+        width: 100%;
+    }
+}
+
+@media(max-width: 454px){
+    .top__button a{
+        display: block;
+        margin: 25px 40px;
+    }
+    .top h1{
+        font-size: 40px;
+        line-height: 57px;
+    }
 }

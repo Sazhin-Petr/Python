@@ -66,9 +66,11 @@
 #     print('Ничья')
 # else:
 #     print('Win', sign)
-from tkinter import *
+# from tkinter import *
+#
+# root =Tk()
+# root.title('окно')
+# root.geometry('400x400')
+# root.mainloop()
 
-root =Tk()
-root.title('окно')
-root.geometry('400x400')
-root.mainloop()
+
