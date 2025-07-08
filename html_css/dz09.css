@@ -1,0 +1,12 @@
+li.red {color: red;}
+li.yellow {color: yellow;}
+li.green {color: green;}
+li.blue {color: blue;}
+li.violet {color: violet;}
+ol {list-style-type: upper-roman}
+.alfa {list-style-type: lower-alpha}
+.orange_circle {list-style:url(orange_marker.png)}
+.green_m {list-style:url(green_marker.png)}
+.red_m {list-style:url(red_marker.png)}
+.violet_m {list-style:url(blue_marker.png)}
+.black_m {list-style:url(black_marker.png)}

@@ -1,0 +1,52 @@
+.animation {
+    border: 1px solid black;
+    background: orange;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    animation: anim 10s 1;
+}   
+
+@keyframes anim{
+    0% {
+        margin-left: 3px;
+        margin-top: 3px;
+    }
+    20% {
+        margin-left: 250px;
+        margin-top: 800px;
+        height: 70px;
+        width: 120px
+    }
+    35% {
+        margin-left: 400px;
+        margin-top: 200px;
+    }
+    45%{
+        margin-left: 500px;
+        margin-top: 800px;
+        height: 80px;
+        width: 110px
+    }
+    55%{
+        margin-left: 600px;
+        margin-top: 400px;
+    }
+    70%{
+        margin-left: 700px;
+        margin-top: 800px;
+    }
+    85%{
+        margin-left: 800px;
+        margin-top: 650px;
+    }
+    95%{
+        margin-left: 850px;
+        margin-top: 800px;
+    }
+    100%{
+        margin-left: 850px;
+        margin-top: 800px;
+    }
+}
+  
