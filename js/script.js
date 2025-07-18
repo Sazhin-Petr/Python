@@ -497,45 +497,177 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 // document.writeln(mas + '<br>');
 
 
-let question = ['На ноль делить можно?', 'Волга впадает в Каспийское море?', 'Атмосферное давление увеличивается с высотой?', '2х2 будет 8?', 'Дельфины - это рыбы?', 'Мадонна - это настоящее имя певицы?', 'Первая мировая началась 1 сент?'];
+// let question = ['На ноль делить можно?', 'Волга впадает в Каспийское море?', 'Атмосферное давление увеличивается с высотой?', '2х2 будет 8?', 'Дельфины - это рыбы?', 'Мадонна - это настоящее имя певицы?', 'Первая мировая началась 1 сент?'];
 
-let correct_answer = [false, true, false, false,false,false];
+// let correct_answer = [false, true, false, false,false,false];
 
-let sum = 0;
-let res = new Array();
+// let sum = 0;
+// let res = new Array();
 
-for(let i = 0; i < question.length; i++){
-    let answer = confirm(question[i]);
-    if (answer == correct_answer[i]){
-        res[i] = 10
-        sum += res[i];
-    } else{
-        res[i] = 0;
-    }
-}
+// for(let i = 0; i < question.length; i++){
+//     let answer = confirm(question[i]);
+//     if (answer == correct_answer[i]){
+//         res[i] = 10
+//         sum += res[i];
+//     } else{
+//         res[i] = 0;
+//     }
+// }
 
-console.log(res);
-console.log(sum);
+// console.log(res);
+// console.log(sum);
 
-document.writeln('<table border="1" width="500">');
+// document.writeln('<table border="1" width="500">');
 
-document.writeln('<tr>')
-document.writeln('<th>Вопросы</th>')
-document.writeln('<th>Баллы</th>')
-document.writeln('</tr>')
+// document.writeln('<tr>')
+// document.writeln('<th>Вопросы</th>')
+// document.writeln('<th>Баллы</th>')
+// document.writeln('</tr>')
 
-for(let i = 0; i < question.length; i++){
-    document.writeln('<tr>');
-    document.writeln('<td>' + question[i] + '</td>')
-    document.writeln('<td>' + res[i] + '</td>')
-    document.writeln('</tr>')
-}
+// for(let i = 0; i < question.length; i++){
+//     document.writeln('<tr>');
+//     document.writeln('<td>' + question[i] + '</td>')
+//     document.writeln('<td>' + res[i] + '</td>')
+//     document.writeln('</tr>')
+// }
 
-document.writeln('<tr>')
-document.writeln('<th>Итого</th>')
-document.writeln('<th>' + sum + '</th>')
-document.writeln('</tr>')
+// document.writeln('<tr>')
+// document.writeln('<th>Итого</th>')
+// document.writeln('<th>' + sum + '</th>')
+// document.writeln('</tr>')
 
-document.writeln('</table>')
+// document.writeln('</table>')
+
+
+// let text1 = document.getElementById('text_1');
+// console.log(text1);
+// console.log(text1.textContent);
+
+// text1.textContent = 'Новое содержимое <b>html разметкой</b';
+
+
+// let text2 = document.getElementById('text_2');
+// text2.innerHTML = 'Новое содержимое <b>html разметкой</b>'
+
+// let res = +prompt('Выберите изображение', '1- собака, 2 - кот, 3 - птицаб 4 - рыба')
+// document.writeln("<div id='image'></div>");
+// let img = document.getElementById('image');
+
+// switch(res){
+//     case 1:
+//         img.innerHTML = '<img src="">';
+//         break;
+//     case 2:
+//         img.innerHTML = '<img src="">';
+//         break;
+//     case 3:
+//         img.innerHTML = '<img src="">';
+//         break;
+//     case 4:
+//         img.innerHTML = '<img src="">';
+//         break;
+//     default:
+//         alert('Такого изображения нет')
+// }
+
+// let tag = document.getElementsByTagName('p')[2]
+// console.log(tag);
+// tag.innerHTML = 'Hello tag';
+// tag.style.background = 'silver';
+// tag.style.padding = '10px 20px';
+// tag.style.color = 'blue';
+// tag.style.fontWeight = 'bold';
+// tag.id = 'test';
+// tag.className = 'x';
+
+// let q = document.getElementsByClassName('a');
+// console.log(q);
+// q[1].style.color = 'red';
+// q[0].style.color = 'blue';
+
+// document.querySelector(css);
+// document.querySelectorAll(css);
+
+// let select_class = document.querySelector('.a');
+// let select_class = document.querySelectorAll('.a')[1];
+// console.log(select_class);
+
+// let select_tag = document.querySelector('p');
+// let select_tag = document.querySelectorAll('p');
+// console.log(select_tag);
+
+// let select_id = document.querySelector('#text_1');
+// let select_id = document.querySelectorAll('#text_1')[0];
+// console.log(select_id);
+
+// select_id.style.color = 'red'
+
+// let el = document.querySelector('h2');
+// el.style.color = 'red'
+
+// let el1 = document.querySelectorAll('h2')[1];
+// el1.style.color = 'purple'
+
+// let lists = document.querySelectorAll('li');
+// console.log(lists.length);
+// for(let i=0; i <lists.length; i++){
+//     lists[i].innerHTML += ' - фрукты';
+// }
+
+// let purples = document.querySelectorAll('.purple li')
+// for(let i=0; i<purples.length; i++){
+//     purples[i].innerHTML += ' !!!'
+// }
+
+// // let m = document.querySelectorAll('.red li')[1];
+// let m = document.getElementsByClassName('red')[0].getElementsByTagName('li')[1];
+// m.style.color = 'orange'
+
+// document.writeln('<div id="divSample"></div>')
+// let div = document.querySelector('#divSample')
+// div.innerHTML = 'Дюбель - конструктивный элемент, который используется для укрепления винта ил предмета на стене, на потолке или на полу в помещении или под открытым небом в различных материалах (бетон, кирпич и прочее). Сам дюбель удерживается в конструкции при помощи сил трения. С некоторого времениэлементы связи'
+// div.style.background='#f0f';
+// div.style.color = '#99ffff';
+// div.style.width = '50%';
+// div.style.outline='10px dotted #000';
+
+// div.className = 'resentFont';
+
+// let res = document.querySelector('.resentFont');
+// res.style.fontSize = '12pt';
+// res.style.fontWeight = 'bold'
+// res.style.textDecoration = 'line-through';
+
+
+let js = ['нужно', 'учить', 'JavaScript'];
+console.log(js);
+
+console.log(js.pop());  //убирает элемент с конца
+console.log(js);
+
+js.push('JavaScript', '!') //добавляет в конец
+console.log(js);
+
+console.log(js.shift());  //убирает с начала
+console.log(js);
+
+js.unshift('Почему', 'нужно')  //добавляет в начало
+console.log(js);
+
+// let arr = js.slice(1,3);
+// console.log(arr);
+// console.log(js.slice(1));
+
+js.splice(0,1);
+console.log(js);
+
+js.splice(0, 2, 'Мы', 'изучаем');
+console.log(js);
+
+js.splice(2, 0, 'сложный', 'язык');
+console.log(js);
+
+js.splice(-2, 0, 'но','очень', 'интересный');
+console.log(js);
 
 
