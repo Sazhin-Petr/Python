@@ -931,6 +931,7 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 // document.writeln(str.toUpperCase() + '<br>');
 
 
+<<<<<<< HEAD
 // let n = prompt('Введите имя', 'никита')
 // alert(first(n));
 
@@ -1143,6 +1144,18 @@ let fullDate = 'Сегодня: ' + d.getDate() + ' ' + month[d.getMonth()] + ' 
 document.writeln(fullDate);
 
 
+=======
+let n = prompt('Введите имя', 'никита')
+alert(first(n));
+
+function first(str){
+    let firsLetter = str.charAt(0).toUpperCase();
+    for(let i=1; i< str.length; i++){
+        firsLetter +=str[i].toLowerCase();
+    }
+    return firsLetter;
+}
+>>>>>>> b4cf50689ae6149addb62a3700a0631b6dbaf7be
 
 
 
