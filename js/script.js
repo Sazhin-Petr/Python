@@ -28,7 +28,6 @@ console.log(firstName) */
 // let firstName = 'Ivan';
 // alert(`Hello, ${firstName}`);
 
-
 // let days = 365
 // let planet = "Земля"
 // let people = '7 млрд'
@@ -74,7 +73,7 @@ console.log(firstName) */
 // console.log(d, typeof(e));
 
 /* let res = prompt('Ваше имя:', 'Значение по умолчанию');
-console.log(res);   */// OK=> string, Отмена =>null
+console.log(res);   */ // OK=> string, Отмена =>null
 
 // let a = 12;
 // let b = 8;
@@ -95,7 +94,6 @@ console.log(res);   */// OK=> string, Отмена =>null
 // // b = parseInt(b)
 // alert('Результат:' + (a + b))
 
-
 // console.log(parseInt('21.84'));  //21
 // console.log(parseFloat('21.84'));  //21.84
 // console.log(parseFloat('21.842354').toFixed(2));
@@ -112,7 +110,7 @@ console.log(res);   */// OK=> string, Отмена =>null
 // console.log(b)
 
 // let a = 0, b = 0;
-// let c = a++ + 2;  //c = 0 + 2, a = 1 
+// let c = a++ + 2;  //c = 0 + 2, a = 1
 // let d = ++b + 2;  //b = 1, d = 1 + 2
 // console.log(a)
 // console.log(b)
@@ -150,7 +148,6 @@ console.log(res);   */// OK=> string, Отмена =>null
 //     блок ложь
 // }
 
-
 /* 
 false => 0, 0.0, '', false, null, undefined, NaN;
  */
@@ -171,38 +168,34 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 // else
 //     alert('На 0 делить нельзя')
 
-
 // let a = 17;
 // let b = 17;
 
-
 // // if(a > b) {
 // //     alert(a + '>' + b);
-// // } 
+// // }
 // // if(a < b) {
 // //     alert(a + '<' + b);
-// // } 
+// // }
 // // if(a == b) {
 // //     alert(a + ' == ' + b)
 // // }
 
 // if(a > b) {
 //     alert(a + '>' + b);
-// } 
+// }
 // else if(a < b) {
 //     alert(a + '<' + b);
-// } 
+// }
 // else {
 //     alert(a + ' == ' + b)
 // }
-
 
 // if(a>b) {
 //     alert(a + '>' + b);
 // } else {
 //     alert(a + '<' + b);
 // }
-
 
 // let login = prompt('Введите логин', 'admin');
 // if(login){
@@ -220,11 +213,10 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 //     } else {
 //         alert('Я вас не знаю')
 //     }
-    
+
 // } else{
 //     alert('Вход отменен');
 // }
-
 
 // let a = 5;
 // console.log(a);
@@ -235,7 +227,6 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 // }
 
 // console.log(b)
-
 
 // if(5 == 5 && 5 > 2){
 //     console.log('TRUE')
@@ -293,7 +284,6 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 //         break;
 // }
 
-
 // let a = +prompt('Введите результат "2 + 2": ');
 // switch(a){
 //     case 4:
@@ -307,7 +297,6 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 //         alert('Я таких значений не знаю');
 //         break;
 // }
-
 
 // let m = +prompt('Введите номер месяца');
 // let n;
@@ -332,7 +321,6 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 // document.writeln('<p>тЕКСТ <b>ВЫВЕДЕН</b> В БРАУЗЕР</p>');
 // document.writeln('<img src="103162_photo.jpg">')  //добавить картинку
 
-
 // let i = 0
 // do {
 //     document.writeln('Это номер: '+ i + '<br>')
@@ -353,7 +341,6 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 //     i++
 // } while(i < 8);
 
-
 // let ch, pr;
 // do{
 //     ch = prompt('Введите число', 10);
@@ -368,11 +355,9 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 
 // alert(pr);
 
-
 // for(инициализация переменной; проверка условия; изменение счетчика){
 //     тело цикла
 // }
-
 
 // for(let i = 1; i < 6; i++){
 //     document.writeln(i + '<br>');
@@ -394,7 +379,6 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 //     i++
 // }
 
-
 // for(var i = 1; i < 6; i++){
 //     document.writeln(i + '<br>');
 // }
@@ -408,7 +392,6 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 //     }
 // }
 
-
 // let tr = prompt('Введите колво строк');
 // let td = prompt('Введите колво столбцов');
 // let symbol = prompt('Введите символ');
@@ -421,7 +404,6 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 //     document.writeln('</tr>');
 // }
 // document.writeln('</table>');
-
 
 // document.writeln('<table border="1" width="260">');
 // for(let i=1; i < 11; i++){
@@ -476,17 +458,14 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 //     arr[i] = prompt('Введите' + (i+1) + ' элемент массива:')
 // }
 
-
 // console.log(arr);
 
 // for(let i = 0; i < arr.length; i++){
 //     document.writeln(arr[i] + '<br>')
 // }
 
-
 // let arr = [2,6,7,'Игорь', 1.4, true];
 // console.log(arr);
-
 
 // let mas = [[2,1,1], [6,3,7], [8,5,6]];
 // console.log(mas);
@@ -495,7 +474,6 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 // console.log(mas[1][2]);
 
 // document.writeln(mas + '<br>');
-
 
 // let question = ['На ноль делить можно?', 'Волга впадает в Каспийское море?', 'Атмосферное давление увеличивается с высотой?', '2х2 будет 8?', 'Дельфины - это рыбы?', 'Мадонна - это настоящее имя певицы?', 'Первая мировая началась 1 сент?'];
 
@@ -538,13 +516,11 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 
 // document.writeln('</table>')
 
-
 // let text1 = document.getElementById('text_1');
 // console.log(text1);
 // console.log(text1.textContent);
 
 // text1.textContent = 'Новое содержимое <b>html разметкой</b';
-
 
 // let text2 = document.getElementById('text_2');
 // text2.innerHTML = 'Новое содержимое <b>html разметкой</b>'
@@ -638,7 +614,6 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 // res.style.fontWeight = 'bold'
 // res.style.textDecoration = 'line-through';
 
-
 // let js = ['нужно', 'учить', 'JavaScript'];
 // console.log(js);
 
@@ -670,11 +645,8 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 // js.splice(-2, 0, 'но','очень', 'интересный');
 // console.log(js);
 
-
 // let str = js.join('; ');
 // console.log(str)
-
-
 
 // let st = ['Фамилия', 'Имя', 'Отчество']
 // let fio = new Array(3);
@@ -685,19 +657,15 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 
 // alert(fio.join(' '));
 
-
 // js.reverse();
 // console.log(js);
 
 // js.sort();
 // console.log(js);
 
-
 // let n = [1, 5, 15, 2];
 // n.sort((a, b) => a - b);
 // console.log(n);
-
-
 
 //Функции
 //Function Declaration
@@ -709,7 +677,6 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 
 // let  test = caption(10, 20, 30);
 // console.log(test);
-
 
 // function showArrayContent(arrayToShow) {
 //     if(arrayToShow.length == 1){
@@ -730,7 +697,6 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 // alert(showArrayContent(b));
 // alert(showArrayContent(c));
 
-
 //Function Expression
 
 // let sum1 = function(a, b){
@@ -739,13 +705,11 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 
 // alert(sum1(2, 3));
 
-
 // alert(sum2(20, 30));
 
 // function sum2 (a, b){
 //     return a + b;
 // }
-
 
 // Immeditely Invoked Function Expression (IIFE) - самовызывающаяся функция (фнониманя)
 
@@ -757,13 +721,10 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 //     alert(n*n);
 // })(4);
 
-
-
 // function caption(a, b, c){
 //     let res = a + b + c;
 //     return res;
 // }
-
 
 // //Arrow Function
 
@@ -775,14 +736,12 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 
 // alert(test(10, 20, 30));
 
-
 // let hello = () => alert('Hello');
 // hello();
 
 // let hello = (n) => alert('Hello ' + n);
 
 // hello('Igor');
-
 
 // document.writeln(Math.floor(7.9) + '<br>');
 // document.writeln(Math.ceil(7.1) + '<br>');
@@ -795,9 +754,7 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 // document.writeln(Math.floor(Math.random() * 9) + '<br>'); // от 0 до 9
 // document.writeln(Math.floor(Math.random() * 7 + 2) + '<br>'); // от 2 до 9
 
-
 // document.writeln(Math.floor(Math.random() * 7 + 7) + '<br>');
-
 
 // let randMas = ['Цикл', 'Массив', 'Условие', 'Функция'];
 // document.writeln(pickRandom(randMas));
@@ -840,8 +797,6 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 // test(1);
 // test(1, 2);
 
-
-
 // function test(){
 //     console.log(arguments[0]);
 //     console.log(arguments[1]);
@@ -850,7 +805,6 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 // }
 
 // test(1, 2, 3);
-
 
 // function sum(){
 //     let res = 0;
@@ -866,7 +820,6 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 // document.writeln(sum(1,2,3) + '</br>')
 // document.writeln(sum(1,2,3,4) + '</br>')
 // document.writeln(sum(1,2,3,4,5) + '</br>')
-
 
 // function hello(name='незнакомец'){
 //     // name = name || 'Незнакомец';
@@ -889,13 +842,11 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 // squre(150, 100);
 // squre();
 
-
 // function hello(){
 //     alert('Привет')
 // }
 
 // alert(hello)
-
 
 // let str = "I\'m a JavaScript \"programmer\""
 // document.writeln(str + '<br>');
@@ -906,7 +857,6 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 // str = str[2] + 'y';
 // document.writeln(str + '<br>');
 
-
 // let s = 'абббабввбабвбвббабвббабв'
 // counterLetters(s);
 // function counterLetters(str){
@@ -915,13 +865,12 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 //         let count = 0;
 //         for(let j=0; j<str.length; j++){
 //             if(str[j] == letters[i]){
-//                count++; 
-//             }           
+//                count++;
+//             }
 //         }
 //         document.writeln('Символ "' + letters[i] + '" встретился ' + count + ' раз<br>');
 //     }
 // }
-
 
 // let str = "I\'m a JavaScript \"programmer\""
 // document.writeln(str[6] + '<br>');
@@ -930,8 +879,6 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 // document.writeln(str.toLowerCase() + '<br>');
 // document.writeln(str.toUpperCase() + '<br>');
 
-
-<<<<<<< HEAD
 // let n = prompt('Введите имя', 'никита')
 // alert(first(n));
 
@@ -943,16 +890,13 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 //     return firsLetter;
 // }
 
-
 // let str = "I\'m a Javascript \"programmer\"";
 // let str1 = 'Я учу Javascript. Мне нравится Javascript';
 // str = str.concat(str1);
 // document.writeln(str + '<br>');
 
-
 // // document.writeln(str.indexOf('Javascript', 7) + '<br');
 // // document.writeln(str.lastIndexOf('Javascript') + '<br');
-
 
 // // document.writeln(str.split('.') + '<br');
 // // console.log(str.split('.', 2));
@@ -976,7 +920,6 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 
 // alert('Спасибо за сотрудничество')
 
-
 // let style = prompt('Введите свойство CSS', 'background-color');
 // alert(replace(style));
 
@@ -988,13 +931,11 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 //     return mas.join('');
 // }
 
-
 // События
 
 // function loadStr(){
 //     alert('Страница загружена');
 // }
-
 
 // let m = document.getElementById('mes');
 
@@ -1020,7 +961,6 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 //     return Math.floor(Math.random()*256);
 // }
 
-
 // let image = document.getElementById('image');
 
 // function on(){
@@ -1031,7 +971,6 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 //     image.src = 'day.png';
 // }
 
-
 // let but = document.getElementById('but');
 
 // but.onclick = hello;
@@ -1039,7 +978,6 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 // function hello(){
 //     alert('Спасибо');
 // }
-
 
 // function change(id){
 //     id.innerHTML = 'Новый текст';
@@ -1060,7 +998,6 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 //     el.style.background = 'yellow';
 // });
 
-
 // document.addEventListener('mousemove', function
 // (event){
 //     let c = document.querySelector('#elem');
@@ -1074,8 +1011,6 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 //     })
 // })
 
-
-
 // let el = document.querySelector('#but');
 
 // el.addEventListener('click', handler);
@@ -1085,11 +1020,9 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 //     el.removeEventListener('click', handler);
 // }
 
-
 // setTimeout(функция, задержка)
 
 // setTimeout('alert("Текст")', 3000)
-
 
 // setTimeout(hello, 1000, 'Привет', 'друг');
 // setTimeout("hello('Привет', 'друг')", 4000);
@@ -1097,7 +1030,6 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 // function hello(h, n){
 //     alert(h + ', ' + n + '!');
 // }
-
 
 // document.writeln('<div id="dt">Создание анимированного текста</div>')
 
@@ -1107,11 +1039,10 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 
 // let i = 0;
 
-
 // window.addEventListener('load', animText);
 
 // function animText(){
-    
+
 //     id.innerHTML = text.substring(0, i);
 //     i++
 //     if(i > text.length){
@@ -1119,7 +1050,6 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 //     }
 //     setTimeout(animText, 500);
 // }
-
 
 // let d = new Date();
 
@@ -1130,41 +1060,350 @@ false => 0, 0.0, '', false, null, undefined, NaN;
 // document.writeln(d.getDate() + '<br>');
 // document.writeln(d.getDay() + '<br>');
 
-
 // Сегодня: 23 июля 2025 год, Среда
 
+// let month = ['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря']
 
-let month = ['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря']
+// let day = ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота']
 
-let day = ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота']
+// let d = new Date();
+// let fullDate = 'Сегодня: ' + d.getDate() + ' ' + month[d.getMonth()] + ' ' + d.getFullYear() + '  год, ' + day[d.getDay()];
 
-let d = new Date();
-let fullDate = 'Сегодня: ' + d.getDate() + ' ' + month[d.getMonth()] + ' ' + d.getFullYear() + '  год, ' + day[d.getDay()];
+// document.writeln(fullDate);
 
-document.writeln(fullDate);
+// setInterval(функция, интервал)
 
+// document.writeln('<input type="button" value="Start/Stop">');
+// document.querySelector("input").addEventListener("click", startStop);
 
-=======
-let n = prompt('Введите имя', 'никита')
-alert(first(n));
+// let act,
+//   run = false;
+// function startStop() {
+//   if (!run) {
+//     act = setInterval(setColor, 1000);
+//     run = true;
+//   } else {
+//     clearInterval(act);
+//     run = false;
+//   }
+// }
 
-function first(str){
-    let firsLetter = str.charAt(0).toUpperCase();
-    for(let i=1; i< str.length; i++){
-        firsLetter +=str[i].toLowerCase();
-    }
-    return firsLetter;
-}
->>>>>>> b4cf50689ae6149addb62a3700a0631b6dbaf7be
+// function setColor() {
+//   let x = document.body;
+//   x.style.background = x.style.background == "yellow" ? "orange" : "yellow";
+// }
 
+// document.writeln("<div id='text'>Здесь будет отображатсья текущее время</div>");
 
+// window.addEventListener("load", () => setInterval(time, 1000));
 
+// function time() {
+//   let d = new Date();
+//   let hour = d.getHours();
+//   let min = d.getMinutes();
+//   let sec = d.getSeconds();
 
+//   if (min < 10) {
+//     min = "0" + min;
+//   }
+//   if (sec < 10) {
+//     sec = "0" + sec;
+//   }
 
+//   let times = hour + ":" + min + ":" + sec;
+//   document.querySelector("#text").innerHTML = times;
+// }
 
+// let imgTime = [
+//   "c0.gif",
+//   "c1.gif",
+//   "c2.gif",
+//   "c3.gif",
+//   "c4.gif",
+//   "c5.gif",
+//   "c6.gif",
+//   "c7.gif",
+//   "c8.gif",
+//   "c9.gif",
+// ];
 
+// let t = document.querySelectorAll("#clock img");
 
+// clock();
 
+// function clock() {
+//   let time = new Date();
+//   let hours = time.getHours();
+//   let mins = time.getMinutes();
+//   let seconds = time.getSeconds();
 
+//   getImg(hours, mins, seconds);
+//   setTimeout(clock, 1000);
+// }
 
+// function getImg(h, m, s) {
+//   t[0].src = imgTime[parseInt(h / 10)];
+//   t[1].src = imgTime[h % 10];
 
+//   t[3].src = imgTime[Math.floor(m / 10)];
+//   t[4].src = imgTime[m % 10];
+
+//   t[6].src = imgTime[Math.floor(s / 10)];
+//   t[7].src = imgTime[s % 10];
+// }
+
+// document.writeln(`
+//     <input type='text' size='4' id='timer' value='0.0'>
+//     <input type='button' value='Start/Stop'>
+//     <input type='button' value='Clear'>
+//     `);
+
+// document
+//   .querySelector("input[value='Start/Stop']")
+//   .addEventListener("click", startTimer);
+
+// document
+//   .querySelector("input[value='Clear']")
+//   .addEventListener("click", resetTimer);
+
+// let id, flag;
+// function startTimer() {
+//   if (!flag) {
+//     id = setInterval(incTimer, 100);
+//   } else {
+//     clearInterval(id);
+//   }
+//   flag = !flag;
+// }
+
+// let tsec = 0;
+// function incTimer() {
+//   tsec++;
+//   let t = tsec / 10.0;
+//   if (tsec % 10 == 0) {
+//     t += ".0";
+//   }
+//   document.getElementById("timer").value = t;
+// }
+
+// function resetTimer() {
+//   document.getElementById("timer").value = "0.0";
+//   tsec = 0;
+// }
+
+// let a = document.querySelector("#cl");
+// a.addEventListener("click", myMove);
+
+// function myMove() {
+//   let elem = document.getElementById("animate");
+//   let pos = 0;
+//   let id = setInterval(frame, 5);
+
+//   function frame() {
+//     // a.style.display = "none";
+//     // a.style.visibility = "hidden";
+//     if (pos == 350) {
+//       //   a.style.display = "block"
+//       //   a.style.visibility = "visible";
+//       a.addEventListener("click", myMove);
+//       clearInterval(id);
+//     } else {
+//       a.removeEventListener("click", myMove);
+//       pos++;
+//       elem.style.top = pos + "px";
+//       elem.style.left = pos + "px";
+//     }
+//   }
+// }
+
+// document.image.border = 1;
+// document.writeln("<br>Ширина изображения: " + document.image.width + "<br>");
+// document.writeln("<br>Высота изображения: " + document.image.height + "<br>");
+
+// let array = new Array("2.jpg", "3.jpg", "4.jpg");
+// document.writeln('<input type="button" value="<" name="left">');
+// document.writeln("<img src='" + array[0] + "'>");
+// document.writeln('<input type="button" value=">" name="right">');
+
+// document.getElementsByName("right")[0].addEventListener("click", arrowRight);
+// document.getElementsByName("left")[0].addEventListener("click", arrowLeft);
+
+// let image = document.querySelector("img");
+
+// let i = 0;
+
+// function arrowRight() {
+//   i++;
+//   if (i == array.length) {
+//     i = 0;
+//   }
+//   image.src = array[i];
+// }
+
+// function arrowLeft() {
+//   i--;
+//   if (i < 0) {
+//     i = array.length - 1;
+//   }
+//   image.src = array[i];
+// }
+
+// для домашки
+// let a = 5;
+// let b = 10;
+// let c;
+
+// console.log("a=", a);
+// console.log("b=", b);
+
+// c = a; // 5
+// a = b; //10
+// b = c; // 5
+
+// console.log("a=", a);
+// console.log("b=", b);
+
+// document.writeln('<input type="number" min="1" max="3">');
+// document.writeln('<input type="button" class="btn" value="Кнопка">');
+
+// let btn = document.querySelector(".btn");
+// btn.addEventListener("click", function () {
+//   let el = document.querySelector("input").value;
+//   console.log(el);
+// });
+
+// alert(document.documentElement.innerHTML);
+// alert(document.head.innerHTML);
+
+// let myTitle = document.querySelector("h1").innerHTML;
+// console.log(myTitle);
+
+// let par = document.querySelector("p").firstChild.nodeValue;
+// let par = document.querySelector("p").childNodes[0].nodeValue;
+// let par = document.querySelector("p").nodeName;
+// let par = document.querySelector("p").firstChild.nodeType;
+// console.log(par);
+
+// let elem = document.querySelector("#root");
+
+// let tag = document.createElement("p"); //<p></p>
+// let node = document.createTextNode("Новый текст");
+
+// tag.append(node); //<p>Новый текст</p>
+
+// elem.append(tag); // добавляет новый элемент последним дочерним элементом внутри родительского
+
+// elem.prepend(tag); // добавляет новый элемент первым дочерним элементом внутри родительского
+
+// elem.before(tag); // добавляет новый элемент до выбранного элемента
+
+// elem.after(tag); // добавляет новый элемент после выбранного элемента
+
+// elem.replaceWith(tag); // заменяет новым элементом выбранный элемент
+
+// let list = document.querySelector("ul");
+
+// let newItem = document.createElement("li");
+// newItem.innerHTML = "Новый <i>элемент списка</i>";
+
+// list.append(newItem);
+//----------------------------
+// document.querySelector("#move").addEventListener("click", change);
+// document.querySelector("#add").addEventListener("click", add);
+// let i = 1;
+
+// function add() {
+//   let elem = document.createElement("li");
+//   elem.innerHTML = "Water " + i;
+//   document.querySelector("#list2").append(elem);
+//   // list2.append(elem);
+//   i++;
+// }
+
+// function change() {
+//   let elem = document.querySelector("#list2").lastChild;
+//   document.querySelector("#list1").append(elem);
+// }
+//--------------------------------
+
+// let div = document.querySelector("#root");
+// div.insertAdjacentHTML("beforebegin", "<p>До выбранного элемента</p>");
+
+// div.insertAdjacentHTML("afterend", "<p>После выбранного элемента</p>");
+// div.insertAdjacentHTML(
+//   "afterbegin",
+//   "<p>Первый внутри выбранного элемента</p>"
+// );
+// div.insertAdjacentHTML(
+//   "beforeend",
+//   "<p>Последний внутри выбранного элемента</p>"
+// );
+
+// let first = document.querySelector("#p1");
+// // first.remove();
+// let second = document.querySelector("#p2");
+
+// second.after(first);
+
+//----------------------------------------
+
+// let ul = document.querySelector("ul");
+// let clone = ul.cloneNode(true);
+
+// clone.querySelector("li").innerHTML = "Начало клонируемых элементов";
+
+// ul.after(clone);
+//-------------------------
+
+// let list = document.querySelector(".list");
+
+// list.insertAdjacentHTML("beforebegin", "<h2>Список </h2><hr>");
+
+// let listInner = document.querySelector("h2");
+// listInner.insertAdjacentText("beforeend", "планет");
+// list.insertAdjacentHTML("afterend", "<hr>");
+
+// let hr = document.querySelectorAll("hr")[1];
+// let h4 = document.createElement("h4"); // <h4></h4>
+// h4.innerHTML = "Конец списка"; // <h4>Конец списка</h4>
+// hr.insertAdjacentElement("afterend", h4);
+
+// let idRemove = setInterval(function () {
+//   let li = document.querySelector(".list > li:last-child");
+//   if (li === null) {
+//     clearInterval(idRemove);
+//     // alert("Список удален");
+//     list.insertAdjacentHTML("afterbegin", "<li>Список удален</li>");
+//   } else {
+//     li.remove();
+//   }
+// }, 500);
+//---------------------------------
+
+// let div = document.querySelector("div");
+// div.className = "alert";
+// let activeDiv = document.querySelector(".active");
+// activeDiv.classList.add("hidden"); // добавляет имя класса
+// // activeDiv.classList.remove("hidden"); // удаляет имя класса
+// activeDiv.classList.toggle("hidden"); //  если есть удаляет, если нет добавляет
+
+// activeDiv.classList.replace("active", "alert"); // перезаписывает класс
+//----------------------------------
+
+// let frogImg = document.querySelector("#greenFrog");
+
+// console.log(frogImg.id);
+// console.log(frogImg.className);
+// console.log(frogImg.alt);
+// console.log(frogImg.title);
+// console.log(frogImg.src);
+// // console.log(frogImg.data-winter);
+
+// frogImg.title = "Новый текст подсказки";
+// console.log(frogImg.getAttribute("src"));
+// console.log(frogImg.getAttribute("data-winter"));
+
+// frogImg.setAttribute("src", "3.jpg");
+// // frogImg.removeAttribute("src");
+
+// console.log(frogImg.hasAttribute("src"));
