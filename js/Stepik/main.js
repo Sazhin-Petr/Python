@@ -106,3 +106,33 @@
 // const accessAllowed = userRoll === "Админ" ? true : false;
 // console.log(accessAllowed);
 // accessAllowed ? console.log("Доступ разрешен") : console.log("Доступ запрещен");
+
+// function getTimeBySeconds(sec) {
+//   let seconds = sec % 60;
+//   let hours = Math.trunc(sec / 3600);
+//   let minutes = Math.trunc((sec % 3600) / 60);
+//   if (seconds < 10) {
+//     seconds = `0${seconds}`;
+//   }
+//   if (minutes < 10) {
+//     minutes = `0${minutes}`;
+//   }
+//   if (hours < 10) {
+//     hours = `0${hours}`;
+//   }
+//   return `${hours}:${minutes}:${seconds}`;
+// }
+
+// console.log(getTimeBySeconds(5));
+// console.log(getTimeBySeconds(152));
+// console.log(getTimeBySeconds(48753));
+// console.log(getTimeBySeconds(61));
+
+function sumOfDigits(num) {
+  if (num === 0) {
+    return 0;
+  } else {
+    const result = (num % 10) + sumOfDigits(Math.floor(num / 10));
+    return result;
+  }
+}
