@@ -1551,19 +1551,187 @@ select.selectedIndex - номер выбранного <option> (индекс)
 
 // --------------------------------
 
-let reg = document.querySelector(".register");
+// let reg = document.querySelector(".register");
 
-reg.addEventListener("submit", function () {
-  let login = reg.login.value;
-  let psd1 = reg.password1.value;
-  let psd2 = reg.password2.value;
-  if (!(login && psd1 && psd2)) {
-    alert("Все поля должны быть заполнены");
-  }
-  if (psd1 !== psd2) {
-    alert("Пароли не совпадают");
-  }
-  if (psd1.length < 6) {
-    alert("Слишком короткий пароль");
-  }
-});
+// reg.addEventListener("submit", function () {
+//   let login = reg.login.value;
+//   let psd1 = reg.password1.value;
+//   let psd2 = reg.password2.value;
+//   if (!(login && psd1 && psd2)) {
+//     alert("Все поля должны быть заполнены");
+//   }
+//   if (psd1 !== psd2) {
+//     alert("Пароли не совпадают");
+//   }
+//   if (psd1.length < 6) {
+//     alert("Слишком короткий пароль");
+//   }
+// });
+
+//2708-------------
+//Регулярные выражения
+
+/*
+search() - возвращает позицию, на которой регулярное выражение совпадает с вызывающй строкой. Возвращает -1, если совпадение не найдено.
+
+match() - получить все совпадения с регулярным выражением
+
+replace() - поиск и замена 
+
+split() - делит строку на массив по символу разделителю, разбивая ее поп указанной подстроке
+
+test() - выполняет поиск совпадения регулярного выражения со строкой. Возвращает true или false
+*/
+
+// флаг /.../g - ищет все совпадения в строке
+
+// let regexp = new RegExp("...");
+// let regexp1 = /шаблон/;
+// let regexp2 = /шаблон/gim; // флаги - gmi
+
+// let str = "Я ищу совпадения в 2025 году. Hello 132154546";
+// // // // let exp = /ищу/g;
+// document.writeln(str + "<br>");
+// document.writeln(str.search(exp) + "<br>");
+// document.writeln(str.match(exp) + "<br>");
+// document.writeln(exp.test(str) + "<br>");
+
+// [...] - искать один из заданных символов, но только один раз
+// let exp = /[0256]/g;
+// document.writeln(str.match(exp) + "<br>");
+
+/* Флаги
+g(global) - глобальный поиск
+i(ignoreCase) - регистронезависимый поиск
+m(multiline) - многострочный поиск
+*/
+
+// let exp = /[я]/gi;
+// document.writeln(str.match(exp) + "<br>");
+
+/*Диапазоны
+[0-9] - одна любая цифра
+[A-Z] - заглавные буквы 
+[a-z] - строчые буквы
+[A-Za-z] - и заглавные и строчные
+[А-ЯЁ] - заглавные русские
+[а-яё] - строчные русские
+[А-яЁё] - все буквы русские
+*/
+
+//[^]  - исключающий диапазон, ни один из указанных символов
+// let exp = /[^0-9]/g;
+// document.writeln(str.match(exp) + "<br>");
+
+/*
+{3} - количество символов, идущих подряд
+{1,} - от одного до любового количества повторений
+{2,5} - от 2 до 5 повторений
+*/
+
+// let exp = /[0-9]{2,3}/g;
+// document.writeln(str.match(exp) + "<br>");
+
+// let html = `
+//   <table>
+//     <tr>
+//       <td bgcolor="#CCC">
+//         <img src="222.png"
+//       </td>
+//       <td bgcolor="#003399">
+//         <img src="1f3.png"
+//       </td>
+//       <td bgcolor="#00ccdd">
+//         <img src="FFF.png"
+//       </td>
+//     </tr>
+//   </table>
+// `;
+
+// let reg = /#([0-9a-f]{3}){1,2}/gi;
+// document.writeln(html.match(reg) + "<br>");
+
+/*
+\d(digit) - любая цифра
+\s(space) - пробельный символ, включая табуляцию и перевод строки
+\w(word) - любая цифра, буква(только английский алфавит, регистронезависимый) или символ подчеркивания
+*/
+
+// let exp = /\w/g;
+// document.writeln(str.match(exp) + "<br>");
+
+/*
+\D - все кроме цифр
+\S - все кроме пробельных символов, включая табуляцию и перевод строки
+\W - все кроме цифр, букв и символа подчеркивания
+*/
+
+// let exp = /\W/g;
+// document.writeln(str.match(exp) + "<br>");
+
+/*
+^ - начало строки (перед последовательностью ничего не должно быть)
+$ - конец строки (после последовательности ничего не должно быть)
+*/
+
+// str = "909";
+// let exp = /^\d{3}$/;
+// document.writeln(str.match(exp) + "<br>");
+
+// точка - один любой символ
+
+// let exp = /\d.\d/g;
+// document.writeln(str.match(exp) + "<br>");
+
+/*
++  -  от 1 до любого кол-ва повторений {1,}
+*  - от 0 до любого кол-ва повторений {0,}
+?  -  от 0 до 1 повторения  {0,1}
+*/
+
+// let exp = /\d?/g;
+// document.writeln(str.match(exp) + "<br>");
+
+// let html = `
+//   <p>Text
+//     <img src='222.jpg'>
+//     <img src='dfsdf222.png'>
+//     <span>else</span>
+//     <img src='RRR.jpeg'>
+//     <img src='uio.gif'>
+//   </p>
+// `;
+// let exp = /(\w+)\.(gif|jpg|jpeg|png|bmp')/g;
+// document.writeln(html.match(exp) + "<br>");
+
+// document.writeln("aaa".replace("a", "b") + "<br>");
+// document.writeln("aaa".replace(/a/g, "b") + "<br>");
+
+// let text = "I kill you black dog";
+// document.writeln(text + "<br>");
+
+// let exp = /(boor|kill|black)/gi;
+// text = text.replace(exp, "***");
+// document.writeln("<p>" + text + "</p>");
+
+// let text = "John Smith";
+// // let exp = /(John) Smith/;
+// // document.writeln(text.match(exp) + "<br>");
+
+// let exp = /(\w+)\s(\w+)/;
+// document.writeln(text.replace(exp, "$2 $1") + "<br>");
+
+// let text = "red color: #F00 and green: #090";
+// document.writeln(text + "<br>");
+
+// let exp = /(#[a-f0-9]{3})/gi;
+
+// text = text.replace(exp, "<span style='color:$1'>$1</span>");
+// document.writeln("<p>" + text + "</p>");
+
+let text = "I like yandex.ru";
+document.writeln(text + "<br>");
+
+let exp = /(([a-z0-9-]{2,}\.)+[a-z]{2,4})/i;
+text = text.replace(exp, "<a href='https://$1'>$1</a>");
+document.writeln("<p>" + text + "</p>");
