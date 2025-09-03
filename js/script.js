@@ -1729,9 +1729,191 @@ $ - конец строки (после последовательности н�
 // text = text.replace(exp, "<span style='color:$1'>$1</span>");
 // document.writeln("<p>" + text + "</p>");
 
-let text = "I like yandex.ru";
-document.writeln(text + "<br>");
+// let text = "I like yandex.ru";
+// document.writeln(text + "<br>");
 
-let exp = /(([a-z0-9-]{2,}\.)+[a-z]{2,4})/i;
-text = text.replace(exp, "<a href='https://$1'>$1</a>");
-document.writeln("<p>" + text + "</p>");
+// let exp = /(([a-z0-9-]{2,}\.)+[a-z]{2,4})/i;
+// text = text.replace(exp, "<a href='https://$1'>$1</a>");
+// document.writeln("<p>" + text + "</p>");
+
+// let str = "    текст    ";
+// str = str.replace(/^\s+ | \s+$/g, "");
+// alert(">" + str + "<");
+
+// let str = "  +7 (999) 123-45-78   ";
+// str = str.replace(/[\s()-]+/g, "");
+// alert(">" + str + "<");
+
+// let str = "+7 (999) 123 45 78";
+// let str = "01-09-2025 25.09.2024 12/03/2003";
+// let re = str.split(/[-. /\s]/);
+// document.writeln(re + "<br>");
+// console.log(re);
+
+//---------------------------->  Object
+
+// let car = new Object();
+// let car1 = {};
+
+// let car = new Object();
+// car["type"] = "BMW";
+// car["color"] = "white";
+// document.writeln(car["type"] + " " + car["color"]);
+
+// let car = new Object();
+// car.type = "BWM";
+// car.color = "White";
+// document.writeln(car.type + " " + car.color);
+// console.log(car);
+
+// let menu1 = {};
+// menu1.width = 300;
+// menu1.height = 200;
+// menu1.tytle = "Menu";
+// document.writeln(
+//   menu1.tytle + ": " + menu1.width + " x " + menu1.height + "<br>"
+// );
+// console.log(menu1);
+
+// let menu = {
+//   width: 300,
+//   height: 200,
+//   tytle: "Menu",
+// };
+
+// // delete menu.width;
+// delete menu.width;
+
+// // document.writeln(menu.tytle + ": " + menu.width + " x " + menu.height + "<br>");
+// let count = 0;
+// menu.age = 25;
+// for (let i in menu) {
+//   document.writeln(i + ": " + menu[i] + "<br>");
+//   count++;
+// }
+
+// console.log(menu);
+// console.log("count:", count);
+
+// // document.writeln("Имена ключей: " + Object.keys(menu));
+// // document.writeln("<br>Всего ключей: " + Object.keys(menu).length);
+
+// // Object.keys(menu).forEach(function (key) {
+// //   document.writeln("<br>" + key + ": " + menu[key]);
+// // });
+
+// Object.keys(menu).forEach((key) =>
+//   document.writeln("<br>" + key + ": " + menu[key])
+// );
+
+// let car = {
+//   name: "Volvo",
+//   year: 2019,
+// };
+
+// console.log(car);
+
+// let obj = {
+//   name: "Гомер",
+//   colors: {
+//     first: "green",
+//     second: "blue",
+//   },
+//   color: ["black", "white", "red", "blue"],
+//   hello: function () {
+//     document.writeln("Привет");
+//   },
+// };
+
+// let mas2 = Object.keys(obj.colors).map(function (elem) {
+//   return elem + ": " + obj.colors[elem] + "<br>";
+// });
+
+// document.writeln(mas2);
+// console.log(mas2);
+
+// let mas = obj.color.map(function (elem, index, all) {
+//   return "<br>color: " + elem + " " + index + " массив: " + all;
+// });
+
+// document.writeln("<br>" + mas + "<br>");
+
+// let mas1 = obj.color.map((elem) => elem.toUpperCase());
+// document.writeln("<br>" + mas1 + "<br>");
+
+// let fil = obj.color.filter(function (elem) {
+//   return elem.length < 5;
+// });
+
+// document.writeln("<br>" + fil + "<br>");
+
+// document.writeln(obj.name + " " + obj.colors.first + " " + obj.color[1]);
+// obj.hello();
+
+// let calc = {
+//   num1: 5,
+//   num2: 10,
+//   calculate: function () {
+//     this.result = this.num1 * this.num2;
+//   },
+// };
+
+// calc.calculate();
+// document.writeln(calc.result + "<br>");
+// document.writeln(calc.num1);
+
+// let x = 15,
+//   y = 10;
+// let coords = {
+//   x: x,
+//   y: y,
+//   calcSq: function () {
+//     document.writeln(this.x * this.y);
+//   },
+// };
+// новый синтаксис
+// let coords = {
+//   x,
+//   y,
+//   calcSq() {
+//     document.writeln(this.x * this.y);
+//   },
+// };
+
+// coords.calcSq();
+
+// Функция конструктор
+
+// function Car(name, year) {
+//   this.name = name;
+//   this.year = year;
+// }
+
+// Car.prototype.getAge = function () {
+//   return new Date().getFullYear() - this.year;
+// };
+
+// Car.prototype.color = "black";
+
+// let ford = new Car("Ford", 2019);
+// console.log(ford);
+// console.log(ford.getAge());
+// ford.color = "red";
+// console.log(ford.color);
+
+// let bmw = new Car("BMW", 2017);
+// console.log(bmw);
+// console.log(bmw.getAge());
+// console.log(bmw.color);
+
+function User(pName, pAge) {
+  this.name = pName;
+  this.age = pAge;
+
+  this.displayInfo = function () {
+    document.writeln("Имя: " + this.name + "; возраст: " + this.age + "<br>");
+  };
+}
+
+let tom = new User("Том", 26);
+tom.displayInfo();
