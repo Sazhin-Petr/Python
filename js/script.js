@@ -1906,14 +1906,274 @@ $ - конец строки (после последовательности н�
 // console.log(bmw.getAge());
 // console.log(bmw.color);
 
-function User(pName, pAge) {
-  this.name = pName;
-  this.age = pAge;
+// function User(pName, pAge) {
+//   this.name = pName;
+//   this.age = pAge;
 
-  this.displayInfo = function () {
-    document.writeln("Имя: " + this.name + "; возраст: " + this.age + "<br>");
-  };
+//   this.displayInfo = function () {
+//     document.writeln("Имя: " + this.name + "; возраст: " + this.age + "<br>");
+//   };
+// }
+
+// let tom = new User("Том", 26);
+// tom.displayInfo();
+
+//0309-----------------
+
+//  Деструктуризация
+
+// let user = {
+//   login: {
+//     firstName: "Kate",
+//     lastName: "Pavlova",
+//   },
+//   password: "qwerty",
+//   role: "guest",
+// };
+
+// let {
+//   // login: { firstName: f, lastName: l },  password,  role,} = user;
+//   login: { firstName: f, lastName: l },
+//   ...rest
+// } = user;
+// document.writeln(f + " " + l + " " + rest.password + " " + rest.role + "<br>");
+// rest.password = "123";
+// document.writeln(f + " " + l + " " + rest.password + " " + rest.role + "<br>");
+// document.writeln(f + " " + l + " " + user.password + " " + user.role + "<br>");
+
+// let { role } = user;
+// document.writeln(role);
+
+// let number = [3, 5, 6];
+// // let [a, b, c] = number;
+// // document.writeln(a, b, c);
+// let [, , c] = number;
+// document.writeln(c);
+
+// let pers = {
+//   name: "Игорь",
+//   colors: ["красный", "белый", "синий", "черный"],
+//   brand: "Bentley",
+//   start: function () {
+//     let { name, colors, brand } = this;
+//     let color = Math.floor(Math.random() * 4);
+//     document.writeln(name + " выйграл " + colors[color] + " " + brand);
+//   },
+// };
+
+// pers.start();
+
+// let form = document.form1;
+// form.addEventListener("submit", (event) => {
+//   event.preventDefault();
+
+//   let title = form.title.value;
+//   let text = form.text.value;
+//   let description = form.description.value;
+
+// console.log(title, text);
+// saveForm({ title: title, text: text });
+//   saveForm({ title, text, description });
+// });
+//preventDefault  - отменяет действия тега, который совершается по умолчанию
+// function saveForm(obj) {
+//   let { title, text, description } = obj;
+//   let formData = {
+//     date: new Date().toLocaleDateString(),
+//     title,
+//     text,
+//     description,
+//   };
+//   console.log("FormData", formData);
+// }
+
+// function saveForm({ title, text, description }) {
+//   let formData = {
+//     date: new Date().toLocaleDateString(),
+//     title,
+//     text,
+//     description,
+//   };
+//   console.log("FormData", formData);
+// }
+
+// function saveForm(obj) {
+//   let formData = {
+//     date: new Date().toLocaleDateString(),
+//     ...obj,
+//   };
+//   console.log("FormData", formData);
+// }
+
+// Классы-------------------------->
+
+// class User {
+//   constructor(name) {
+//     this.name = name;
+//   }
+
+//   sayHi() {
+//     document.writeln("Hello, " + this.name + "!");
+//   }
+// }
+
+// let user = new User("Igor");
+// user.sayHi();
+
+// class User {
+//   constructor(login) {
+//     this.login = login;
+//   }
+
+//   get login() {
+//     return this._login;
+//   }
+
+//   set login(value) {
+//     if (value.length < 6) {
+//       alert("Слишком короткий логин");
+//       return;
+//     }
+//     this._login = value;
+//   }
+// }
+
+// let user = new User("administrator");
+// alert(user.login);
+// user.login = "admin_admin";
+// alert(user.login);
+// user.login = "admin";
+// alert(user.login);
+
+// class Person {
+//   constructor(firstName, lastName) {
+//     this._firstName = firstName;
+//     this._lastName = lastName;
+//   }
+
+//   get fullName() {
+//     return this._firstName + " " + this._lastName;
+//   }
+
+//   set fullName(value) {
+//     [this._firstName, this._lastName] = value.split(/\s+/g);
+//   }
+// }
+
+// let people = new Person("John", "Dou");
+// document.writeln(people.fullName + "<br>");
+// people.fullName = "Anna Petrova";
+// document.writeln(people.fullName + "<br>");
+
+// class Animal {
+//   static count = 0;
+
+//   constructor(name) {
+//     this.speed = 0;
+//     this.name = name;
+//     Animal.count++;
+//   }
+
+//   static counter() {
+//     return Animal.count;
+//   }
+
+//   run(speed) {
+//     this.speed = speed;
+//     document.writeln(`${this.name} бежит со скоростью ${this.speed} км/ч <br>`);
+//   }
+
+//   stop() {
+//     this.speed = 0;
+//     document.writeln(`${this.name} стоит.<br>`);
+//   }
+// }
+
+// class Rabbit extends Animal {
+//   constructor(name, earLength) {
+//     super(name);
+//     this.earLength = earLength;
+//   }
+
+//   hide() {
+//     document.writeln(`${this.name} прячется! <br>`);
+//   }
+
+//   stop() {
+//     super.stop();
+//     this.hide();
+//   }
+// }
+
+// let animal = new Animal("Мой питомец");
+// animal.run(80);
+// animal.stop();
+
+// document.writeln("<br>");
+
+// let rabbit = new Rabbit("Белый кролик", 10);
+// rabbit.run(5);
+// rabbit.hide();
+// rabbit.stop();
+// document.writeln(rabbit.name + "<br>");
+// document.writeln(rabbit.earLength + "<br>");
+
+// let animal2 = new Animal("Мой питомец 2");
+// let animal3 = new Animal("Мой питомец 3");
+// let animal4 = new Animal("Мой питомец 4");
+// document.writeln(Animal.counter());
+
+class Header {
+  constructor(img, h1, h2) {
+    this.src = img;
+    this.h1 = h1;
+    this.h2 = h2;
+    this.out = "";
+  }
+  render(id) {
+    this.out = `
+    <img src='${this.src}' alt=''>
+    <h1>${this.h1}</h1>
+    <h2>${this.h2}</h2>
+    `;
+    document.querySelector(`#${id}`).innerHTML = this.out;
+  }
 }
 
-let tom = new User("Том", 26);
-tom.displayInfo();
+class HeaderExt extends Header {
+  constructor(img, h1, h2, tel) {
+    super(img, h1, h2);
+    this.tel = tel;
+  }
+  render(id) {
+    super.render(id);
+    this.out += `
+      <h3>${this.tel}</h3>
+    `;
+    document.querySelector(`#${id}`).innerHTML = this.out;
+  }
+}
+
+let img =
+  "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/187_Js_logo_logos-64.png";
+
+let header = new Header(img, "Заголовок", "Описание");
+header.render("header");
+
+let img2 =
+  "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/233_Node_Js_logo-64.png";
+
+let header2 = new Header(img2, "Второй заголовок", "Другое описание");
+header2.render("header2");
+
+let img3 =
+  "https://cdn0.iconfinder.com/data/icons/font-awesome-brands-vol-1/512/js-64.png";
+
+let header3 = new HeaderExt(
+  img3,
+  "Заголовок в наследнике",
+  "Описание в классе",
+  "+7 999 123-45-67"
+);
+
+header3.render("header-ext");
