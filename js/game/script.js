@@ -5,11 +5,29 @@ let game = document.querySelector("#game");
 let score = 0;
 let time = document.querySelector("#time");
 let isGameStarted = false;
+let timeHeader = document.querySelector("#time-header");
+let resultHeader = document.querySelector("#result-header");
+let result = document.querySelector("#result");
+let gameTime = document.querySelector("#game-time");
 
 start.addEventListener("click", startGame);
 game.addEventListener("click", handleBoxClick);
+gameTime.addEventListener("input", setGameTime);
+
+function boxColor() {
+  let r = Math.floor(Math.random() * 256);
+  let g = Math.floor(Math.random() * 256);
+  let b = Math.floor(Math.random() * 256);
+  let boxColor = `rgb(${r}, ${g}, ${b})`;
+  return boxColor;
+}
 
 function startGame() {
+  score = 0;
+  setGameTime();
+  gameTime.setAttribute("disabled", "true");
+  timeHeader.classList.remove("hide");
+  resultHeader.classList.add("hide");
   isGameStarted = true;
   start.classList.add("hide");
   game.style.background = "#FFF";
@@ -27,11 +45,22 @@ function startGame() {
   renderBox();
 }
 
+function setGameTime() {
+  let tm = +gameTime.value;
+  time.textContent = tm.toFixed(1);
+  timeHeader.classList.remove("hide");
+  resultHeader.classList.add("hide");
+}
+
 function endGame() {
   isGameStarted = false;
   game.innerHTML = "";
+  result.textContent = score;
+  gameTime.removeAttribute("disabled");
   start.classList.remove("hide");
   game.style.background = "#8be8fb";
+  timeHeader.classList.add("hide");
+  resultHeader.classList.remove("hide");
 }
 
 function getRandom(min, max) {
@@ -49,7 +78,7 @@ function renderBox() {
   let maxLeft = gameSize.width - boxSize;
 
   box.style.width = box.style.height = boxSize + "px";
-  box.style.background = "#000";
+  box.style.background = boxColor();
   box.style.position = "absolute";
   box.style.top = getRandom(0, maxTop) + "px";
   box.style.left = getRandom(0, maxLeft) + "px";

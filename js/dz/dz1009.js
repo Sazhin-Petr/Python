@@ -6,9 +6,11 @@ let inputName = document.querySelector("[name='name']");
 let inputPhone = document.querySelector("[name='phone']");
 
 let message = {
-  loading: "Загрузка",
+  loading: "Загрузка данных",
   succes: "Спасибо! Скоро с вами свяжемся",
   failure: "Что-то пошло не так",
+  incorrectName: "Имя должно состоять из букв!",
+  incorrectPhone: "Телефон должен содержать только цифры!",
 };
 
 form.addEventListener("submit", (event) => {
@@ -17,33 +19,59 @@ form.addEventListener("submit", (event) => {
   let nameValue = inputName.value.trim();
   let phoneValue = inputPhone.value.trim();
 
-  if (!(/^[a-zA-Zа-яА-ЯёЁ\s]{2,}$/.test(nameValue))) {
-    alert("Имя должно состоять из букв");
+  function showMessage(text, duration = 2000) {
+    let window = document.createElement("div");
+    window.classList.add("window");
+    window.innerHTML = text;
+    document.body.appendChild(window);
+    setTimeout(() => {
+      if (window.parentNode) {
+        window.remove();
+      }
+    }, duration);
+    return window;
+  }
+
+  if (!/^[a-zA-Zа-яА-ЯёЁ\s]{2,}$/.test(nameValue)) {
+    showMessage(message.incorrectName);
     return;
   }
 
-  if (!(/^[\d\-\s]+$/.test(phoneValue))) {
-    alert("Телефон должен содержать только цифры");
+  if (!/^[\d\-\s]+$/.test(phoneValue)) {
+    showMessage(message.incorrectPhone);
+    return;
   }
 
-  let msg = document.createElement("div");
-  msg.textContent = message.loading;
-  form.append(msg);
+  let loadWind = showMessage(message.loading, 3000);
 
-  let request = new XMLHttpRequest();
-  request.open("POST", "server.php");
+  setTimeout(() => {
+    let request = new XMLHttpRequest();
+    request.open("POST", "server.php");
+    
+    let formData = new FormData(form);
+    request.send(formData);
 
-  let formData = new FormData(form);
-  request.send(formData);
+    request.addEventListener("load", function () {
 
-  request.addEventListener("load", function () {
-    if (request.status == 200) {
-      request.response;
-      alert(message.succes);
-    } else {
-      msg.textContent = message.failure;
-    }
-    form.reset();
-    setTimeout(() => msg.remove(), 500);
-  });
+      if (loadWind.parentNode) {
+        loadWind.remove();
+      }
+      
+      if (request.status == 200) {
+        showMessage(message.succes);
+      } else {
+        showMessage(message.failure);
+      }
+      
+      form.reset();
+    });
+
+    request.addEventListener("error", function () {
+      if (loadWind.parentNode) {
+        loadWind.remove();
+      }
+      showMessage(message.failure);
+    });
+
+  }, 2000); 
 });
