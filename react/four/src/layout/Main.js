@@ -8,12 +8,13 @@ class Main extends React.Component {
   state = {
     movies: [],
     loading: true,
+    count: 0
   };
 
   componentDidMount() {
     fetch("http://www.omdbapi.com/?apikey=7f8521b5&s=matrix")
       .then((response) => response.json())
-      .then((data) => this.setState({ movies: data.Search, loading: false }));
+      .then((data) => this.setState({ movies: data.Search, loading: false, count: data.totalResults}));
   }
   searchMovie = (str, type = "all", page) => {
     this.setState({ loading: true });
@@ -23,15 +24,17 @@ class Main extends React.Component {
       }${`&page=${page}`}`
     )
       .then((response) => response.json())
-      .then((data) => this.setState({ movies: data.Search, loading: false }));
+      .then((data) => this.setState({ movies: data.Search, loading: false, count: data.totalResults }));
   };
   render() {
-    const { movies, loading } = this.state;
+    const { movies, loading, count } = this.state;
+    console.log(count);
+    
 
     return (
       <div className="main">
         <div className="wrap">
-          <Search searchMovie={this.searchMovie} />
+          <Search searchMovie={this.searchMovie} totalCount={count} />
           {loading ? <Preloader /> : <MovieList movies={movies} /> }
         </div>
       </div>
