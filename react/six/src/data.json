@@ -1,0 +1,203 @@
+{
+    "categories": [
+        {
+            "name": "Все"
+        },
+        {
+            "name": "Природа"
+        },
+        {
+            "name": "Архитектура"
+        },
+        {
+            "name": "Вода"
+        },
+        {
+            "name": "Фауна"
+        }
+    ],
+    "collections": [
+        {
+            "category": 1,
+            "name": "Отдых на природе",
+            "photos": [
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=16bea94a95c2eb648aede0d86cb46e1e1e23f0a3-9181443-images-thumbs&n=13",
+                    "thumbnail":"https://avatars.mds.yandex.net/i?id=16bea94a95c2eb648aede0d86cb46e1e1e23f0a3-9181443-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=2eb2080e3de158788822646f65c45f38d4334325-4432806-images-thumbs&n=13",
+                    "thumbnail":"https://avatars.mds.yandex.net/i?id=2eb2080e3de158788822646f65c45f38d4334325-4432806-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=686831f70bfadde14652df077ac971d8ed66e323-15115173-images-thumbs&n=13",
+                    "thumbnail":"https://avatars.mds.yandex.net/i?id=686831f70bfadde14652df077ac971d8ed66e323-15115173-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=549b9fec58e4580cc4c98327b2722010e7cd9c8d-4382526-images-thumbs&n=13",
+                    "thumbnail":"https://avatars.mds.yandex.net/i?id=549b9fec58e4580cc4c98327b2722010e7cd9c8d-4382526-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=9ef99082729206db9af3323bf755b8d951afdcac-5327796-images-thumbs&n=13",
+                    "thumbnail":"https://avatars.mds.yandex.net/i?id=9ef99082729206db9af3323bf755b8d951afdcac-5327796-images-thumbs&n=13"
+                }
+            ]
+        },
+        {
+            "category": 2,
+            "name": "Архитектура",
+            "photos": [
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=c65e80e86ebf0d382e0933dc54a7de1772c35b0e-5435026-images-thumbs&n=13",
+                    "thumbnail":"https://avatars.mds.yandex.net/i?id=c65e80e86ebf0d382e0933dc54a7de1772c35b0e-5435026-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=94eb6564a86dfe496e55c3efcbc1b42e7616fb5f-9263520-images-thumbs&n=13",
+                    "thumbnail":"https://avatars.mds.yandex.net/i?id=94eb6564a86dfe496e55c3efcbc1b42e7616fb5f-9263520-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=90bca3edf8e4ba67a256a9a3bf1efe6d7929ae97-4577889-images-thumbs&n=13",
+                    "thumbnail":"https://avatars.mds.yandex.net/i?id=90bca3edf8e4ba67a256a9a3bf1efe6d7929ae97-4577889-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=4ef8d22f1a10a7b7d90c763580f9180c4db3d235-5643928-images-thumbs&n=13",
+                    "thumbnail":"https://avatars.mds.yandex.net/i?id=4ef8d22f1a10a7b7d90c763580f9180c4db3d235-5643928-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=03ac12d7a69b620465e9042e867a7e89a8983676-4864173-images-thumbs&n=13",
+                    "thumbnail":"https://avatars.mds.yandex.net/i?id=03ac12d7a69b620465e9042e867a7e89a8983676-4864173-images-thumbs&n=13"
+                }
+            ]
+        },
+        {
+            "category": 1,
+            "name": "Виды природы",
+            "photos": [
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=b1f60b8e12559f10b8d79936b8a308e1915a00b3-8191765-images-thumbs&n=13",
+                    "thumbnail":"https://avatars.mds.yandex.net/i?id=b1f60b8e12559f10b8d79936b8a308e1915a00b3-8191765-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=b02f8d71cef58c3a2a353c32a3b00c5c896d3ae2-16448618-images-thumbs&n=13",
+                    "thumbnail":"https://avatars.mds.yandex.net/i?id=b02f8d71cef58c3a2a353c32a3b00c5c896d3ae2-16448618-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=43a65e0d40e1111b5cf8714e945077491f94b7f4-5107667-images-thumbs&n=13",
+                    "thumbnail":"https://avatars.mds.yandex.net/i?id=43a65e0d40e1111b5cf8714e945077491f94b7f4-5107667-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=3e86c04d101439905c8e9df15a1628b81532324f-8261187-images-thumbs&n=13",
+                    "thumbnail":"https://avatars.mds.yandex.net/i?id=3e86c04d101439905c8e9df15a1628b81532324f-8261187-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=032eefc6a3093aa2f9484bf7da943357a2ed6125-12802892-images-thumbs&n=13",
+                    "thumbnail":"https://avatars.mds.yandex.net/i?id=032eefc6a3093aa2f9484bf7da943357a2ed6125-12802892-images-thumbs&n=13"
+                }
+            ]
+        },
+        {
+            "category": 3,
+            "name": "Подводный мир",
+            "photos": [
+                {
+                    "original": "https://avatars.mds.yandex.net/i?id=ad1472cd4a15eadea8fb728e962540b360e70176-16305618-images-thumbs&n=13",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=ad1472cd4a15eadea8fb728e962540b360e70176-16305618-images-thumbs&n=13"
+                },
+                {
+                    "original": "https://avatars.mds.yandex.net/i?id=06e53c269c2d706902fb28d730123cb5afc22ea7-4119342-images-thumbs&n=13",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=06e53c269c2d706902fb28d730123cb5afc22ea7-4119342-images-thumbs&n=13"
+                },
+                {
+                    "original": "https://avatars.mds.yandex.net/i?id=d55da957cf5b96679ec3a3193972fe3d16d044ee-5254476-images-thumbs&n=13",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=d55da957cf5b96679ec3a3193972fe3d16d044ee-5254476-images-thumbs&n=13"
+                },
+                {
+                    "original": "https://avatars.mds.yandex.net/i?id=c662fa5dfd21713dd3358e844bb041a851baf14a-10769069-images-thumbs&n=13",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=c662fa5dfd21713dd3358e844bb041a851baf14a-10769069-images-thumbs&n=13"
+                },
+                {
+                    "original": "https://avatars.mds.yandex.net/i?id=fa5511e9c63bec1f50a49b90e5844c129d449f18-10814708-images-thumbs&n=13",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=fa5511e9c63bec1f50a49b90e5844c129d449f18-10814708-images-thumbs&n=13"
+                }
+            ]
+        },
+        {
+            "category": 4,
+            "name": "Животные",
+            "photos": [
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=15757b031eaeecb89b4f1a159bf348e5682539de-5843137-images-thumbs&n=13",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=15757b031eaeecb89b4f1a159bf348e5682539de-5843137-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=07cfdd85318d87c10dd0b9d73a4fda79f6d2e684-4438945-images-thumbs&n=13",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=07cfdd85318d87c10dd0b9d73a4fda79f6d2e684-4438945-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=b34e349c28a654df63f5e39045752ba17711eca3-4341598-images-thumbs&n=13",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=b34e349c28a654df63f5e39045752ba17711eca3-4341598-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=180d0e2e30ee75b684c3f9797309d7bb297ea1cc-5579164-images-thumbs&n=13",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=180d0e2e30ee75b684c3f9797309d7bb297ea1cc-5579164-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=35ba07d1ffb0b4de190c3040acb6dc1c1c03d94d-4809949-images-thumbs&n=13",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=35ba07d1ffb0b4de190c3040acb6dc1c1c03d94d-4809949-images-thumbs&n=13"
+                }
+            ]
+        },
+        {
+            "category": 4,
+            "name": "Насекомые",
+            "photos": [
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=b66b128d12055dd34c3db46ddcfcd1919af82d0a-5309715-images-thumbs&n=13",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=b66b128d12055dd34c3db46ddcfcd1919af82d0a-5309715-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=46308cec4e8806ba46b565eb5c2615084fafcb22-4055838-images-thumbs&n=13",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=46308cec4e8806ba46b565eb5c2615084fafcb22-4055838-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=47d02e83e5c025e88b1e8d249de40066cc53082d-3751006-images-thumbs&n=13",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=47d02e83e5c025e88b1e8d249de40066cc53082d-3751006-images-thumbs&n=13"
+                },
+                {
+                    "original": "https://avatars.mds.yandex.net/i?id=5a6b7765aaa4ab34b860e621e8eadbf876fd321e-9283819-images-thumbs&n=13",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=5a6b7765aaa4ab34b860e621e8eadbf876fd321e-9283819-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=1f64ed16807e45f215b7dcfd693e59d278058d43-16914019-images-thumbs&n=13",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=1f64ed16807e45f215b7dcfd693e59d278058d43-16914019-images-thumbs&n=13"
+                }
+            ]
+        },
+        {
+            "category": 3,
+            "name": "Коралловые рифы",
+            "photos": [
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=b07bfa6379f90a4807aa3d3609e4be73d4eec162-16492692-images-thumbs&n=13",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=b07bfa6379f90a4807aa3d3609e4be73d4eec162-16492692-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=2a00000199dd4103feda923a3aa9a2ce5d9c-1748490-fast-images&n=13",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=2a00000199dd4103feda923a3aa9a2ce5d9c-1748490-fast-images&n=13"
+                },
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=2a00000199cee3fab67fae1f246dd9d8ab06-1525849-fast-images&n=13",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=2a00000199cee3fab67fae1f246dd9d8ab06-1525849-fast-images&n=13"
+                },
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=2cddbe53af0434b41fdb70e0325747f23bc657d8-4429870-images-thumbs&n=13",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=2cddbe53af0434b41fdb70e0325747f23bc657d8-4429870-images-thumbs&n=13"
+                },
+                {
+                    "original": "https://avatars.mds.yandex.net/i?id=57a4fffe177efc195d1519265d96afdce38e28eb-10311550-images-thumbs&n=13",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=57a4fffe177efc195d1519265d96afdce38e28eb-10311550-images-thumbs&n=13"
+                }
+            ]
+        }       
+    ]
+}
