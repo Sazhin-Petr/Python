@@ -1,5 +1,5 @@
 function Home({ items, onCheckboxChange }){
-     const selectedItems = items.filter(item => item.checked);
+    //  const selectedItems = items.filter(item => item.checked);
 
     return(
         <div style={{ 
@@ -9,7 +9,7 @@ function Home({ items, onCheckboxChange }){
             justifyContent: 'center',
         }}>
             <h2 style={{marginBottom: 60}}>Home Page</h2>
-            <form>
+            {/* <form>
                 <fieldset style={{ border: 'none' }}>
                     <legend style={{ 
                         textAlign: 'center', 
@@ -57,7 +57,7 @@ function Home({ items, onCheckboxChange }){
                     }} />
                     <h3>Total Completed: {selectedItems.length}</h3>
                 </div>
-            )}
+            )} */}
         </div>
     )
 }
