@@ -56,4 +56,26 @@ body {
 
 .img img{
     border: 6px solid #FFF;
+    width: 500px;
+}
+
+.elem{
+    border: 2px solid grey;
+    margin-bottom: 0;
+    
+}
+
+.top{
+    background: rgb(14, 14, 145);
+    color: #FFF;
+    text-align: center;
+    width: 500px;
+    height: 50px;
+    padding: 20px 0 0;
+    border-radius: 6px;
+}
+
+.blog_text{
+    width: 500px;
+    height: 250px;
 }

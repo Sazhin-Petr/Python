@@ -1,0 +1,22 @@
+{% extends 'skills/base.html' %}
+
+{% block content %}
+<h1>Pricing</h1>
+<div class="container">
+    {% for blog in blogs %}
+    <div class="elem">
+        <p class="top">{{ blog.title }}</p>
+        <div class="back"><p class="price">{{ blog.price }}</p>
+        <div class="blog_text">
+            <p>{{ blog.description }}</p>
+        </div>
+        <div class="button-container">
+            <form action="{{ blog.url }}">
+                <button class="btn">Купить</button>
+            </form>
+        </div></div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
