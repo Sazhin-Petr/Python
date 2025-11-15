@@ -66,7 +66,7 @@ h1, h2{
 .btn{
     width: 80%;
     padding: 10px;
-
+    margin-bottom: 15px;
 }
 
 .content li{
@@ -76,8 +76,17 @@ h1, h2{
     text-align: left;
 }
 
-.content a{
+.content a, .compeleted{
     color: black;
     display: block;
     padding: 20px;
 }
+
+.good{
+    background: teal;
+}
+
+.remove{
+    background: orangered;
+}
+

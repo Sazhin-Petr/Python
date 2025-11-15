@@ -5,8 +5,29 @@
     <meta charset="UTF-8">
     <title>Title</title>
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'skills/favic.png' %}">
 </head>
 <body>
+<div class="menu">
+    <div class="wrap">
+        <div class="logo"><a href="{% url 'index' %}"><img src="{% static 'skills/portfol.png' %}" alt=""></a></div>
+        <ul>{% if user.is_authenticated %}
+                <li class="logo">Пользователь: {{ user.username }}</li>
+                <li><a href="{% url 'index' %}">Главная</a></li>
+                <li><a href="{% url 'blogs' %}">Блог</a></li>
+                <li>
+                    <form action="{% url 'logoutuser' %}" method="post">
+                        {% csrf_token %}
+                        <button class="up">Выйти</button>
+                    </form>
+                </li>
+            {% else %}
+                <li><a href="{% url 'signupuser' %}">Регистрация</a></li>
+                <li><a href="{% url 'loginuser' %}">Войти</a></li>
+            {% endif %}
+        </ul>
+    </div>
+</div>
   <div class="content">
     <div class="wrap">
       {% block content %}
